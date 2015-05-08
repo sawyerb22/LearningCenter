@@ -1,0 +1,220 @@
+//Variable Colors
+@import '../../../common/assets/styles/includes/vars.sass'
+
+.hero-center
+  width: 65%
+  padding-top: 60px
+  margin: 0 auto
+  i
+    font-size: 32px
+    color: $neon_teal
+    margin-right: 25px
+  h3.title
+    font-size: 32px
+    display: block
+    color: #fff
+    text-align: center
+    &::before
+      content: "\e96a"
+      font-family: 'icomoon'
+      font-size: 25px
+      margin-right: 25px
+      color: $neon_teal
+  p
+    font-size: 16px
+    line-height: 22px
+    color: #fff
+.hero-btn
+  margin-top: 50px
+.search-titlebar
+  height: 65px
+  width: 100%
+  background: #fff
+  border-bottom: 1px solid #DADCE3
+  &::before
+    content: "\e6df"
+    font-family: 'icomoon'
+    z-index: 100
+    color: #333
+    font-size: 24px
+    position: relative
+    top: 4px
+    left: 15px
+    margin-right: 15px
+  #search
+    width: 65%
+    font-size: 16px
+    line-height: 64px
+    height: 64px
+    -webkit-appearance: none
+    outline: 0
+    border: 0
+    &:focus
+      border-right: 1px solid #DADCE3
+.topic-wrap
+  background: #F3F6F9
+  padding: 15px 30px
+  .section-title
+    .topic-text
+      display: inline-block
+      h3
+        font-size: 16px
+        margin-bottom: 0
+      p
+        font-size: 13px
+        margin-top: 5px
+    button.btn-flat
+      float: right
+      margin-top: 25px
+  .topics
+    border-bottom: 1px solid #ccc
+    .topic-tile-container
+      display: -webkit-flex
+      display: -ms-flexbox
+      display: flex
+      -webkit-flex-wrap: wrap
+      -ms-flex-wrap: wrap
+      flex-wrap: wrap
+      -webkit-align-items: flex-start
+      -ms-flex-align: start
+      align-items: flex-start
+      -webkit-align-content: flex-start
+      -ms-flex-line-pack: start
+      align-content: flex-start
+      a
+        text-decoration: none
+      .topic-tile
+        display: inline-block
+        width: 20%
+        padding: 16px
+        box-shadow: 0 1px 4px #CED2E2
+        border-radius: 5px 5px 0 0
+        text-align: center
+        height: 130px
+        position: relative
+        &.base-green
+          background: $base_green
+          a
+            color: $base_green_accent
+        &.soft-orange
+          background: $soft_orange
+          a
+            color: #9A5646
+        &.blue-tile
+          background: $blue
+          a
+            color: #246B9A
+        &.mustard-orange
+          background: $mustard_orange
+          a
+            color: #895809
+        &.flat-gray
+          background: $flat_gray
+          a
+            color: #4B5E67
+        &.soft-blue
+          background: $soft_blue
+          a
+            color: #377086
+        &.mint-green
+          background: $mint_green
+          a
+            color: #35726A
+        &.purple
+          background: $purple
+          a
+            color: #825A92
+        &.darker-pink
+          background-color: $darker_pink
+          a
+            color: #773846
+        &.salmon
+          background: $salmon
+          a
+            color: #90423A
+        i
+          display: block
+          position: relative
+          top: 25px
+          font-size: 45px
+        .tile-footer
+          width: 100%
+          background: #fff
+          height: 30px
+          line-height: 30px
+          position: absolute
+          bottom: 0
+          .topic-title
+            margin: 0
+            font-weight: 400
+            font-size: 14px
+            color: $text_gray
+  .featured-classes
+    border-bottom: 1px solid #ccc
+  .featured-courses
+    border-bottom: 1px solid #ccc
+  .course-tile-holder, .class-tile-holder
+    margin: 40px auto
+  .featured-classes,.featured-courses
+    .class-tile
+      display: inline-block
+      width: 23%
+      margin-right: 1.77%
+      a
+        text-decoration: none
+        .tile-header
+          background: $mint_green
+          border-radius: 5px 5px 0 0
+          color: #fff
+          padding: 5px 0 5px 15px
+          h3
+            margin: 0
+            font-size: 15px
+            font-weight: 400
+        .tile-body
+          background: #fff
+          padding: 20px
+          color: $main_accent
+          .category
+            margin-bottom: 0
+            font-size: 14px
+            &.foundations
+              &::before
+                content: '\e920'
+                font-family: 'icomoon'
+                margin-right: 10px
+          .topic-length
+            font-size: 14px
+            &::before
+              content: '\e682'
+              font-family: 'icomoon'
+              margin-right: 10px
+        .tile-footer
+          background: #fff
+          border-top: 1px solid #ccc
+          text-align: center
+          padding: 8px 0
+          h4
+            color: $doubious_blue
+            font-size: 13px
+            margin: 0
+//QUERIES
+@media screen and (max-width: 1170px)
+  .topic-wrap
+    .topics
+      .topic-tile-container
+        .topic-tile
+          width: calc(25% - 25px)
+@media screen and (max-width: 990px)
+  .topic-wrap
+    .topics
+      .topic-tile-container
+        .topic-tile
+          width: calc(33.333% - 25px)
+@media screen and (max-width: 767px)
+  .topic-wrap
+    .topics
+      .topic-tile-container
+        .topic-tile
+          width: calc(50% - 25px)
+

@@ -1,0 +1,71 @@
+/* line 4, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+.content-wrap .content .hero-top {
+  padding-left: 35px;
+  height: 300px; }
+  /* line 7, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+  .content-wrap .content .hero-top .hero-center {
+    width: 60%;
+    display: inline-block;
+    position: relative;
+    top: 20px; }
+    /* line 12, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+    .content-wrap .content .hero-top .hero-center h2 {
+      margin-top: 0;
+      color: #fff;
+      text-align: left;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 5px;
+      font-size: 20px;
+      font-weight: 300;
+      margin-bottom: 50px; }
+    /* line 22, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+    .content-wrap .content .hero-top .hero-center .title {
+      color: #fff;
+      font-weight: 400; }
+    /* line 25, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+    .content-wrap .content .hero-top .hero-center p {
+      color: #fff;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px; }
+      /* line 30, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+      .content-wrap .content .hero-top .hero-center p .hero-btn {
+        margin-top: 0;
+        padding: 5px;
+        position: absolute;
+        right: 0; }
+/* line 35, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+.content-wrap .content .icon-badge {
+  width: 150px;
+  height: 150px;
+  background: #5FC6B8;
+  border-radius: 100%;
+  position: absolute;
+  right: 150px;
+  top: 50%;
+  transform: translateY(-50%); }
+  /* line 44, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+  .content-wrap .content .icon-badge img {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 50%;
+    display: block; }
+/* line 50, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+.content-wrap .content .hero-button {
+  position: absolute;
+  right: 50px;
+  padding: 8px 40px;
+  margin-top: 20px; }
+/* line 56, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+.content-wrap .content .video-track .active {
+  color: #5FCF80 !important;
+  font-weight: bold; }
+  /* line 59, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+  .content-wrap .content .video-track .active i {
+    color: #5FCF80; }
+  /* line 61, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+  .content-wrap .content .video-track .active span {
+    color: #5FCF80; }
+
+/*# sourceMappingURL=class.css.map */

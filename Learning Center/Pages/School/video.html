@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <link rel="stylesheet" type="text/css" href="assets/styles/video.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/fonts/fonts.css"/>
+ </head>
+ <body>
+  <nav>
+
+  </nav>
+  <div class="col-center">
+    <div id="video-container">
+     <video id="video" width="100%" height="">
+       <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+     </video>
+     <div id="controls">
+       <button type="button" class="button" id="play-pause"><i class="icon icon-play-arrow"></i></button>
+       <input type="range" class="slider" id="seeker" value="0">
+       <button type="button" class="button" id="mute"><i class="icon icon-volume-medium"></i></button>
+       <input type="range" class="slider" id="volume" min="0" max="1" step="0.1" value="1">
+       <button type="button" class="button" id="full-screen"><i class="icon icon-enlarge2"></i></button>
+     </div>
+   </div>
+  </div>
+
+   <script type="text/javascript" src="assets/scripts/video.js"></script>
+ </body>
+</html>

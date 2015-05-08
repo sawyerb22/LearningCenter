@@ -1,0 +1,107 @@
+/* line 2, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/assets/styles/video.sass */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #1abc9c; }
+
+/* line 8, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/assets/styles/video.sass */
+nav {
+  width: 40px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #404951; }
+
+/* line 15, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/assets/styles/video.sass */
+.col-center {
+  width: calc(100% - 40px);
+  position: relative;
+  left: 40px; }
+
+/* line 19, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/assets/styles/video.sass */
+#video-container {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #34495e; }
+  /* line 24, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/assets/styles/video.sass */
+  #video-container #video {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    max-height: 600px; }
+  /* line 29, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/assets/styles/video.sass */
+  #video-container #controls {
+    display: flex;
+    margin: 0;
+    padding: 5px 10px 10px 10px; }
+    /* line 34, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/assets/styles/video.sass */
+    #video-container #controls .button i {
+      font-size: 28px; }
+    /* line 36, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/assets/styles/video.sass */
+    #video-container #controls #seeker {
+      flex: 1;
+      border-radius: 0 10px 10px 0; }
+    /* line 39, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/assets/styles/video.sass */
+    #video-container #controls #volume {
+      width: 100px;
+      border-radius: 0 10px 10px 0; }
+    /* line 42, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/assets/styles/video.sass */
+    #video-container #controls #play-pause, #video-container #controls #mute {
+      border-radius: 10px 0 0 10px; }
+
+/* line 45, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/assets/styles/video.sass */
+.button {
+  display: inline-block;
+  margin: 0;
+  padding: 2px 0 0 0;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  font-size: 16px;
+  background: #1abc9c;
+  border: none;
+  border-radius: 10px;
+  border-bottom: 1px solid #148f77;
+  color: #34495e;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 63, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/assets/styles/video.sass */
+.slider {
+  -webkit-appearance: none !important;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  padding: 0 10px 0 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 0 10px 10px 0;
+  background: #1abc9c;
+  /*background-image: linear-gradient(
+	 *to top,
+	 *#1abc9c,
+	 *#1abc9c 45%,
+	 *#34495e 45%,
+	 *#34495e 55%,
+	 *#1abc9c 55%
+	 *); */
+  border: none;
+  border-bottom: 1px solid #148f77;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  /* line 86, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/assets/styles/video.sass */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background: #34495e;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; }
+
+/*# sourceMappingURL=video.css.map */
