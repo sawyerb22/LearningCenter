@@ -1,0 +1,220 @@
+//Variable Colors
+@import '../../../../common/assets/styles/includes/vars.sass'
+
+.quiz-tools
+  width: 100%
+  height: 45px
+  border-bottom: 1px solid #DADCE3
+  a
+    text-decoration: none
+    color: $main_accent
+    font-weight: bold
+    font-size: 14px
+    position: relative
+    top: 12px
+    left: 12px
+    &:before
+      content: '\e91b'
+      font-family: "icomoon"
+      font-size: 18px
+      margin-right: 8px
+      position: relative
+      top: 2px
+  h2
+    display: inline-block
+    float: right
+    position: relative
+    margin: 0
+    font-size: 16px
+    right: 15px
+    top: 12px
+
+//QUIZ
+
+//QUIZ Modal
+.welcome-quiz
+  position: fixed
+  top: 0
+  left: 0
+  background: #F5F5F5
+  opacity: 0.9
+  width: 100%
+  height: 100%
+  z-index: 1
+  .modal-body
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    border: 1px solid #DFDFDF
+    padding: 50px
+    background: #fff
+    border-radius: 3px
+    h3
+      color: #6a6d7b
+    p
+      color: #657380
+    .buttons-wrapper
+      text-align: center
+      .start
+        width: 120px
+        height: 40px
+        background: $mint_green
+        line-height: 35px
+        color: #fff
+        border: 0
+        outline: 0
+        cursor: pointer
+        font-size: 14px
+        border-radius: 4px
+      .back-videos
+        margin-right: 15px
+        width: 120px
+        padding: 10px
+        background: #fff
+        border: 1px solid #95A5A6
+        line-height: 35px
+        color: #fff
+        outline: 0
+        cursor: pointer
+        font-size: 14px
+        border-radius: 4px
+        color: #7F8393
+        text-decoration: none
+
+
+//QUIZ BODY
+.question-body
+  h2
+    color: $main_accent
+    margin: 50px 25px
+.answerMode
+  position: relative
+  width: 100%
+  height: 50px
+  line-height: 50px
+  text-indent: 15px
+  background: #DADCE3
+  color: #707483
+  span
+    margin-right: 8px
+  .wrong-answer
+    span
+      color: $bummer_red
+      font-weight: bold
+  .correct-answer
+    span
+      color: #46D39B
+      font-weight: bold
+  //Buttons
+  .next-question
+    position: absolute
+    top: 12px
+    right: 15px
+    width: 100px
+    height: 30px
+    line-height: 25px
+    font-size: 12px
+    color: #fff
+    background: $mint_green
+    border: none
+    border-radius: 3px
+    cursor: pointer
+    outline: none
+  .get-help
+    position: absolute
+    top: 12px
+    right: 130px
+    width: 100px
+    font-size: 12px
+    border: 1px solid #95A5A6
+    border-radius: 3px
+    height: 30px
+    line-height: 30px
+    text-decoration: none
+    color: #7F8393
+#options
+  input[type='radio']
+    display: none
+  li
+    border-bottom: 1px solid #DDDFE0
+    background: #F3F6F9
+    opacity: 0.68
+    font-weight: bold
+    &:first-child
+      border-top: 1px solid #DDDFE0
+    label
+      padding-left: 25px
+      width: 100%
+      height: 50px
+      display: block
+      cursor: pointer
+      line-height: 50px
+      color: #2D4359
+      &.selected
+        background: #fff
+        border: 1px solid #D2D2D2
+        border-left: 0
+        border-right: 0
+
+//Finished Modal
+.quiz-finish
+  position: fixed
+  top: 0
+  width: 100%
+  height: 100%
+  background: #fff
+  z-index: 1
+  .modal-body
+    position: absolute
+    top: 50%
+    left: 50%
+    -webkit-transform: transition(-50%,-50%)
+    -moz-transform: transition(-50%,-50%)
+    -o-transform: transition(-50%,-50%)
+    transform: transition(-50%,-50%)
+
+//Side Bar
+.about
+  padding: 15px
+  .quiz-info
+    h4
+      font-size: 13px
+      color: $main_accent
+      margin: 0
+    h2
+      font-size: 15px
+      margin-top: 5px
+      color: $main_accent
+  .navigator
+    background: #DADCE3
+    border-radius: 5px
+    max-height: 35px
+    width: 90%
+    margin: 0 auto
+    a
+      text-decoration: none
+    .back-button
+      display: inline-block
+      width: 50%
+      height: 35px
+      border-right: 4px solid $column_gray
+      border-radius: 5px 0 0 5px
+      text-align: center
+      margin-left: -5px
+      i
+        font-size: 25px
+        position: relative
+        top: 5px
+        color: #444
+    .skip-button
+      display: inline-block
+      width: 50%
+      height: 35px
+      border-radius: 0 5px 5px 0
+      text-align: center
+      i
+        font-size: 25px
+        position: relative
+        top: 5px
+        color: #444

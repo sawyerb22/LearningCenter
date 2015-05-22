@@ -1,3 +1,13 @@
+  var dur = video.duration;
+  var min = Math.floor(dur/60);
+  var hours = Math.floor(dur/3600);
+  var sec = Math.round(dur%60);
+  var durationFormated = formatNumber(hours) + ':' + formatNumber(Math.floor(min%60)) + ':' + formatNumber(sec);
+function formatNumber(num){
+  return num > 9 ? num.toString() : '0'+num.toString();
+}
+
+alert(durationFormated);
 window.onload = function () {
   var video = document.getElementById('video'),
       seeker = document.getElementById('seeker'),
@@ -6,6 +16,8 @@ window.onload = function () {
       mute = document.getElementById('mute'),
       full = document.getElementById('full-screen');
 
+
+  console.log(durationFormated)
   seeker.addEventListener('change', function() {
     var time = video.duration * (seeker.value / 100);
     video.currentTime = time;

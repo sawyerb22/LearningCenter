@@ -15,19 +15,38 @@ $('.btnPlay').on('click', function() {
    return false;
 });
 
+//Update Formatnum
+
+//Get Duration in proper format
+  var duration = video[0].duration;
+  var durmin = Math.floor(duration/60);
+  //var hours = Math.floor(dur/3600);
+  var dursec = Math.round(duration%60);
+  var initdurationFormated =  formatNumber(Math.floor(durmin%60)) + ':' + formatNumber(dursec);
+  function formatNumber(num){
+    return num > 9 ? num.toString() : '0'+num.toString();
+  }
 
 //Set Video Times
-$('.duration').text(video[0].duration);
-$('.current').text(video[0].currentTime);
+$('.duration').text(initdurationFormated);
 
 //Get video duration
 video.on('loadedmetadata', function() {
-  $('.duration').text(video[0].duration);
+  $('.duration').text(initdurationFormated);
 });
 
 //Update Current time text
 video.on('timeupdate', function(){
-  $('.current').text(video[0].currentTime);
+  var current = video[0].currentTime;
+  var min = Math.floor(current/60);
+  //var hours = Math.floor(current/3600);
+  var sec = Math.round(current%60);
+  var currentFormated =  formatNumber(Math.floor(min%60)) + ':' + formatNumber(sec);
+
+  function formatNumber(num){
+    return num > 9 ? num.toString() : '0'+num.toString();
+  }
+  $('.current').text(currentFormated);
 })
 
 //Update Current Play Time

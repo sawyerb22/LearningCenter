@@ -1,34 +1,57 @@
+<div ng-show="!inProgress" class="welcome-quiz">
+  <div class="modal-body">
+    <h3>Welcome To The Quiz!!</h3>
+    <p>We hope you enjoy this interactive quiz click below to get started!<br> Or if your not ready for a quiz, Theres no worries here! Come back when you've watched more of the videos!</p>
+    <div class="buttons-wrapper">
+      <a href="class.html" class="back-videos">Watch More</a>
+      <button ng-show="!inProgress" class="start" id="startQuiz" ng-click="start()">Start the Quiz</button>
+    </div>
+  </div>
+</div>
+
+ <div class="intro">
+  <div class="quiz-tools">
+    <a href="class.html" class="action-back">Principles of Design</a>
+    <h2 ng-show="!inProgress">0/5</h2>
+    <h2 ng-show="inProgress" id="question">{{id}}/5</h2>
+  </div>
+  <div class="question-body" ng-show="inProgress">
+    <h2 class="question" ng-show="inProgress">{{question}}</h2>
+    <div class="answerMode" ng-show="!answerMode">
+     <div class="answer-action" ng-show="!answerMode">
+       <div class="correct-answer" ng-show="correctAns"><span>Nice Job!</span>That is correct!</div>
+       <div class="wrong-answer" ng-show="!correctAns">
+         <span>Bummer! </span> Sorry, that is an incorrect answer.
+         <a href="#" class="get-help">Review Video</a>
+       </div>
+       <button ng-click="nextQuestion()" class="next-question">Next Question</button>
+     </div>
+    </div>
+  </div>
+</div>
+
 <div class="quiz-area" ng-show="inProgress">
   <div ng-show="!quizOver">
-    <h2 id="question">{{question}}</h2>
     <ul id="options">
       <li ng-repeat="option in options">
         <label>
-          <input type="radio" name="answer" value="{{option}}">
+          <input type="radio" name="answer" id="answer-radio" class="hide-radio" ng-click="checkAnswer()" value="{{option}}">
           {{option}}
         </label>
       </li>
     </ul>
-    <button ng-click="checkAnswer()" ng-show="answerMode">Submit</button>
 
-    <div ng-show="!answerMode">
-      <button ng-click="nextQuestion()" class="next-question">Next</button>
-      <span ng-show="correctAns">That is correct!</span>
-      <span ng-show="!correctAns">Sorry, that is an incorrect answer.</span>
+  </div>
+  <div ng-show="quizOver" class="quiz-finish">
+    <div class="modal-body" ng-show="quizOver">
+      <h2>That wasnt so bad!</h2>
+      <div ng-show="quizOver" id="score">
+        You Scored: + {{score}}
+      </div>
+      <button ng-click="start()" ng-click="reset()">Play again</button>
     </div>
   </div>
 
-  <div ng-show="quizOver">
-    <h2>Quiz is over</h2>
-    <button ng-click="reset()">Play again</button>
-  </div>
-
-  <div id="score">
-    Score: {{score}}
-  </div>
 </div>
 
-<div class="intro" ng-show="!inProgress">
-  <p>Welcome to the QuizApp</p>
-  <button id="startQuiz" ng-click="start()">Start the Quiz</button>
-</div>
+

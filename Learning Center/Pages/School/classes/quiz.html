@@ -4,9 +4,12 @@
     <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="../common/assets/fonts/fonts.css"/>
     <link rel="stylesheet" type="text/css" href="../common/assets/styles/scaffold.css"/>
+    <link rel="stylesheet" type="text/css" href="../common/assets/styles/respond.css"/>
     <link rel="stylesheet" type="text/css" href="assets/styles/class.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/styles/quiz/quiz.css"/>
     <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script src="assets/scripts/script.js"></script>
     <script src="assets/scripts/quiz/app.js"></script>
   </head>
   <body>
@@ -20,42 +23,33 @@
        </ul>
      </nav>
        <div class="content">
-         <section class="hero-top class-flat-blue" style="display: none;">
-           <div class="hero-center">
-            <h2>Class</h2>
-            <h3 class="title">Principles Of Design</h3>
-            <p>
-                In this course we will go over the basic principles of design. From the coralation of color,
-                to the grid based design structure that you will follow in web design. With this course you
-                will leave knowing these basics like the back of your hand.
-                <button class="start hero-button btn-neon">Start Class</button>
-            </p>
-           </div>
-           <div class="icon-badge">
-             <img src="../common/assets/images/SVG/stationery.svg" alt="design-badge" />
-           </div>
-         </section>
-
-
-
          <section class="curriculum">
            <div class="curriculum-center container">
-             <h1 class="title">QuizApp</h1>
              <quiz/>
            </div>
            <div class="about">
-              <h3>Class Instructor</h3>
-              <h4>Jonny Ive</h4>
-              <p class="about-teach">
-                Jonny spends most of his
-                time working at apple where
-                he is busy designing things like
-                the latest Iphone, or the majesty
-                of the latest version of IOS user
-                interface. Needless to say Jonny is a leader in
-                the industry of design. We couldnt have asked for
-                anyone better to teach this course.
-              </p>
+              <div class="quiz-info">
+                <h4>Stage 1</h4>
+                <h2>Color Therory</h2>
+                <div class="navigator">
+                  <div class="back-button"><a href="class.html"><i class="icon-arrow-back"></i></a></div>
+                  <div class="skip-button"><i class="icon-arrow-forward"></i></div>
+                </div>
+              </div>
+              <div class="teacher-info" style="display: none;">
+                <h3>Class Instructor</h3>
+                <h4>Jonny Ive</h4>
+                <p class="about-teach">
+                  Jonny spends most of his
+                  time working at apple where
+                  he is busy designing things like
+                  the latest Iphone, or the majesty
+                  of the latest version of IOS user
+                  interface. Needless to say Jonny is a leader in
+                  the industry of design. We couldnt have asked for
+                  anyone better to teach this course.
+                </p>
+              </div>
            </div>
          </section>
        </div>

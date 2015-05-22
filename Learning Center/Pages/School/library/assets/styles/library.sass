@@ -1,6 +1,10 @@
 //Variable Colors
 @import '../../../common/assets/styles/includes/vars.sass'
 
+.content
+  background: #F3F6F9
+.hide
+  display: none
 .hero-center
   width: 65%
   padding-top: 60px
@@ -69,29 +73,31 @@
   .topics
     border-bottom: 1px solid #ccc
     .topic-tile-container
-      display: -webkit-flex
-      display: -ms-flexbox
-      display: flex
-      -webkit-flex-wrap: wrap
-      -ms-flex-wrap: wrap
-      flex-wrap: wrap
-      -webkit-align-items: flex-start
-      -ms-flex-align: start
-      align-items: flex-start
-      -webkit-align-content: flex-start
-      -ms-flex-line-pack: start
-      align-content: flex-start
+      &:before
+        content: ""
+        display: table
+      &:after
+        content: ""
+        display: table
+        clear: both
+        zoom: 1
+        /* For IE 6/7*/
       a
         text-decoration: none
       .topic-tile
-        display: inline-block
-        width: 20%
-        padding: 16px
+        display: block
+        float: left
+        width: 18.72%
+        margin: 1% 0 1% 1.6%
         box-shadow: 0 1px 4px #CED2E2
         border-radius: 5px 5px 0 0
         text-align: center
-        height: 130px
+        padding: 15px 0 85px 0
         position: relative
+        &:first-child
+          margin-left: 0
+        &:nth-child(6)
+          margin-left: 0
         &.base-green
           background: $base_green
           a
@@ -199,22 +205,74 @@
             font-size: 13px
             margin: 0
 //QUERIES
-@media screen and (max-width: 1170px)
+@media screen and (max-width: 1167px)
+  .hero-center
+    h3
+      &.title
+        font-size: 28px
+    p
+      font-size: 14px
   .topic-wrap
     .topics
       .topic-tile-container
         .topic-tile
-          width: calc(25% - 25px)
-@media screen and (max-width: 990px)
-  .topic-wrap
-    .topics
-      .topic-tile-container
-        .topic-tile
-          width: calc(33.333% - 25px)
+          width: 23.72%
+          &:nth-child(6)
+            margin: 1% 0 1% 1.6%
+          &:nth-child(5)
+            margin: 1% 0 1% 0
+          &:nth-child(9)
+            margin: 1% 0 1% 0
 @media screen and (max-width: 767px)
+  .content-wrap
+    .content
+      .hero-top
+        height: 500px
+      .hero-center
+        h3
+          &.title
+            margin-top: 0
+            &::before
+              font-size: 60px
+              display: block
   .topic-wrap
     .topics
       .topic-tile-container
         .topic-tile
-          width: calc(50% - 25px)
-
+          width: 32.26%
+          &:nth-child(4)
+            margin: 1% 0 1% 0
+          &:nth-child(5)
+            margin: 1% 0 1% 1.6%
+          &:nth-child(6)
+            margin: 1% 0 1% 1.6%
+          &:nth-child(7)
+            margin: 1% 0 1% 0
+          &:nth-child(8)
+            margin: 1% 0 1% 1.6%
+          &:nth-child(9)
+            margin: 1% 0 1% 1.6%
+@media screen and (max-width: 550px)
+  .topic-wrap
+    .topics
+      .topic-tile-container
+        margin-bottom: 25px
+        .topic-tile
+          width: 100%
+          margin: 0 0 5% 0
+          &:nth-child(3)
+            margin: 0 0 5% 0
+          &:nth-child(4)
+            margin: 0 0 5% 0
+          &:nth-child(5)
+            margin: 0 0 5% 0
+          &:nth-child(6)
+            margin: 0 0 5% 0
+          &:nth-child(7)
+            margin: 0 0 5% 0
+          &:nth-child(8)
+            margin: 0 0 5% 0
+          &:nth-child(9)
+            margin: 0 0 5% 0
+          &:last-child
+            margin-bottom: 100px

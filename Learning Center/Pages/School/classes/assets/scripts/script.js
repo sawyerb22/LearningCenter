@@ -14,12 +14,12 @@ $('.acc-drawer a').on('click',function(e){
 $('.start').click(function(e){
   e.preventDefault;
   $('.hero-top').hide();
-  $('.video-holder').show().children().get(0).play();
+  $('#video-container').show().children().get(0).play();
 })
 $(".sub-menu .video-track a").click(function(e){
   e.preventDefault();
   $('.hero-top, .video-actions').hide();
-  $('.video-holder, #video, .control').show();
+  $('#video-container').show();
   $("#video").attr("src", $(this).attr("href")).get(0).play();
   $(".video-track .active").removeClass("active");
   $(this).addClass("active");
@@ -36,7 +36,9 @@ $('#video').on('ended', function(){
   $('#video').hide();
   $('.control').hide();
   $('.video-actions').show();
+  $('.top-content').addClass('next-action');
   $('.rewatch').click(function(){
+    $('.top-content').removeClass('next-action');
     $('#video').show();
     $('.control').show();
     $('.video-actions').hide();
@@ -50,3 +52,14 @@ if($('#video-container').find('#video').length){
 } else {
   console.log('Theres no class in here called control');
 }
+
+
+// Disable Radio Buttons After another has been selected,
+// Add Selected Class
+
+$(document).on('click', ':radio', function() {
+  var radioName = $(this).attr("name"); //Get radio name
+  $(":radio[name='" + radioName + "']:not(:checked)").attr("disabled", true); //Disable all unchecked radios with the same name
+  $(this).parent().addClass('selected');
+});
+

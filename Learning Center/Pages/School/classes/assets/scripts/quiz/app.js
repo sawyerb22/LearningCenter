@@ -1,5 +1,4 @@
 var app = angular.module('quizApp', []);
-
 app.directive('quiz', function(quizFactory) {
   return {
     restrict: 'AE',
@@ -8,6 +7,7 @@ app.directive('quiz', function(quizFactory) {
     link: function(scope, elem, attrs) {
       scope.start = function() {
         scope.id = 0;
+        scope.question;
         scope.quizOver = false;
         scope.inProgress = true;
         scope.getQuestion();
@@ -64,23 +64,23 @@ app.factory('quizFactory', function() {
       answer: 1
     },
     {
-      question: "When did the second world war end?",
-      options: ["1945", "1939", "1944", "1942"],
+      question: "What makes up a line?",
+      options: ["A collection of dots or periods", "Dashes", "You use pens to draw them", "Who needs lines in web design?"],
       answer: 0
     },
     {
-      question: "Which was the first country to issue paper currency?",
-      options: ["USA", "France", "Italy", "China"],
-      answer: 3
-    },
-    {
-      question: "Which city hosted the 1996 Summer Olympics?",
-      options: ["Atlanta", "Sydney", "Athens", "Beijing"],
+      question: "You use lines to create shapes.",
+      options: ["True", "False"],
       answer: 0
     },
     {
-      question: "Who invented telephone?",
-      options: ["Albert Einstein", "Alexander Graham Bell", "Isaac Newton", "Marie Curie"],
+      question: "What is the Hue of a Color?",
+      options: ["The Opacity or shade of the base color", "A value used to tell the browser what color you want", "There is no Hue in Colors", "Hue Jackman"],
+      answer: 0
+    },
+    {
+      question: "There is no such thing as 'Grid' in Web Design.",
+      options: ["True", "False"],
       answer: 1
     }
   ];
@@ -95,3 +95,4 @@ app.factory('quizFactory', function() {
     }
   };
 });
+
