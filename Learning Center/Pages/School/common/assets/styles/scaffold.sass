@@ -1,15 +1,26 @@
+//Google font
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,700|Varela+Round|Open+Sans:400,300,600,700)
+
 //Variable Colors
 @import 'includes/vars.sass'
+
 //Resets
 *
   box-sizing: border-box
   -webkit-box-sizing: border-box
   -moz-box-sizing: border-box
 html, body
-  font-family: 'Oxygen', sans-serif
+  font-family: $main-copy
   padding: 0
   margin: 0
   height: 100%
+  h1,h2,h3,h4,h5,h6,a
+    font-family: $oxygen
+  p
+    font-family: $main-copy
+    line-height: 25px
+    font-size: 14px
+    margin: 0 0 28px 0
   ul
     padding-left: 0
     margin: 0
@@ -63,15 +74,37 @@ html, body
       .about
         width: 300px
         height: 100%
+        padding: 15px
         background: $column_gray
         border-left: 1px solid #DADCE3
         position: absolute
         right: 0
         h3
-          color: #6A6D7B
+          color: #657380
         h4
           color: #404951
+        .about-teach
+          color: #657380
+          font-size: 14px
+        .instructor 
+          margin-top: 30px
+        .about-teach 
+          color: #657380
+          font-size: 14px
 
+        .downloads ul 
+          margin-bottom: 1em
+        li 
+          margin-bottom: .72em
+          a::before 
+            content: '\e61b'
+            font-family: icomoon
+            margin-right: 5px
+            font-size: 14px
+          a 
+            font-size: 16px
+            color: #4e77a9
+            text-decoration: none
 //Elements
 
 //Video Element
@@ -80,8 +113,6 @@ html, body
   background: #505B64
   height: auto
   display: none
-  &.next-action
-    height: 500px
   video
     width: 100%
     height: auto
@@ -165,18 +196,21 @@ html, body
       outline: none
   .video-actions
     display: none
-    position: relative
-    text-align: center
-    top: 50%
-    transform: translateY(-50%)
-    -webkit-transform: translateY(-50%)
-    -moz-transform: translateY(-50%)
-    -o-transform: translateY(-50%)
+    width: 100%
+    height: 500px
+    .actions
+      position: relative
+      text-align: center
+      top: 50%
+      transform: translateY(-50%)
+      -webkit-transform: translateY(-50%)
+      -moz-transform: translateY(-50%)
+      -o-transform: translateY(-50%)
     .rewatch
       font-size: 18px
       border: 4px solid #75809C
       background: transparent
-      padding: 18px 30px
+      padding: 15px 30px
       border-radius: 8px
       outline: none
       color: #fff
@@ -190,12 +224,13 @@ html, body
       @media screen and (max-width: 515px)
         display: block
         margin: 0 auto 15px auto
+        padding: 15px 5px
         width: 225px
     .next-video
       font-size: 18px
       border: 4px solid $base_green
       background: transparent
-      padding: 18px 30px
+      padding: 15px 30px
       width: 225px
       border-radius: 8px
       outline: none
@@ -211,6 +246,30 @@ html, body
       @media screen and (max-width: 515px)
         display: block
         margin: 0 auto
+        padding: 15px 5px
+    .take-quiz
+      display: inline-block
+      font-size: 18px
+      border: 4px solid $cpurp
+      background: transparent
+      padding: 15px 30px
+      width: 225px
+      border-radius: 8px
+      outline: none
+      color: #fff
+      cursor: pointer
+      text-decoration: none
+      margin-left: 30px
+      &::after
+        content: '\e922'
+        font-family: 'icomoon'
+        margin-left: 15px
+      &:hover
+        background: $cpurp
+      @media screen and (max-width: 515px)
+        display: block
+        margin: 0 auto
+        padding: 15px 5px
 //accordion
 .acc-container
   display: block
@@ -221,23 +280,29 @@ html, body
   background-color: #fff
   overflow-x: auto
   li
+    .acc-body
+      min-height: 130px
+      position: relative
     a
       width: 100%
       height: auto
-      padding-bottom: 35px
       display: inline-block
       position: relative
       background: #fff
       text-decoration: none
       color: $gray1
+      @media screen and (max-width: 500px)
+        padding-bottom: 35px
+      .badge-container
+        float: left
       .badge
         display: inline-block
         width: 65px
         height: 65px
         border-radius: 100%
         position: relative
-        top: 10px
-        left: 25px
+        top: 20px
+        left: 20px
         img
           width: 50%
           display: block
@@ -249,14 +314,19 @@ html, body
         position: relative
         left: 45px
         width: calc(90% - 45px)
+        @media (max-width: 544px)
+          padding-top: 20px
         h3
           font-size: 16px
           margin-bottom: 0
+          color: #657380
         p
           margin-top: 8px
           font-size: 13px
           color: #707483
           width: 75%
+          @media (max-width: 544px)
+            line-height: 15px
       .acc-footer
         position: absolute
         bottom: 0
@@ -368,36 +438,42 @@ html, body
         display: block
         height: auto
         background-color: $column_gray
-        padding: 15px 0
+        padding: 0
         border-bottom: 1px solid #DBDBDB
         li
+          background: $column_gray
+          text-decoration: none
+          border-bottom: 0
           border-bottom: none
           &.video-track
-            height: 40px
-            line-height: 40px
-            a
-              color: #707483
+            height: 50px
+            line-height: 50px
+            position: relative
+            color: #707483
+            cursor: pointer
+            &.active
+              color: #fff !important
+              font-weight: bold
+              background: #5FCF80
               i
-                font-size: 25px
-                position: relative
-                top: 4px
-                left: 20px
-                margin-right: 45px
-
-          a
-            background: $column_gray
-            text-decoration: none
-            border-bottom: 0
-            .video-track
-
+                color: #fff
+              .time-total
+                color: #fff
+            i
+              font-size: 25px
+              position: relative
+              top: 4px
+              left: 20px
+              margin-right: 45px
+              &.icon-points_expense
+                font-size: 22px
             .time-total
               position: absolute
               right: 15px
         .sub-blue
           display: block
           border-bottom: #e7e7e7
-.next-video
-  margin-left: 30px
+
 //Buttons
 .btn-block-center
   display: block
@@ -440,7 +516,7 @@ html, body
 
 //atoms
 .library-hero
-  background: $doubious_blue
+  background: #48535C
 .class-green
   background: $base_green
 .cool-green
@@ -465,3 +541,11 @@ html, body
   background-color: $darker_pink
 .class-salmon
   background: $salmon
+
+//text images
+.right-img
+  float: right
+  margin-left: 15px
+  position: relative
+  right: 10px
+  bottom: 5px

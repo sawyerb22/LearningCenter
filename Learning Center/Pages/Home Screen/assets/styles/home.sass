@@ -1,0 +1,350 @@
+//Google font
+@import url(http://fonts.googleapis.com/css?family=Varela+Round|Open+Sans:600italic,400,300,600,700)
+
+$headings: 'Varela Round', sans-serif
+$main-copy: 'Open Sans', sans-serif
+$oxygen: 'Oxygen', sans
+$course-green: #7CC6B5
+$class-purple: #908EB5
+$course-icon: #72B7A7
+$class-icon: #817FA4
+
+body,html
+  width: 100%
+  height: 100%
+body
+  margin: 0
+  padding: 0
+  font-family: $main-copy
+a
+  font-family: $main-copy
+.wrapper
+  width: 100%
+  height: 100%
+  position: relative
+  @media screen and (max-width: 1700px)
+    max-width: 1700px
+    margin: 0 auto
+.background-block
+  &.cover-filter
+    display: block
+    content: " "
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    background: rgba(0, 0, 0, 0.3)
+    height: 800px
+  &.feature-top
+    background-color: #7CC6B5
+    min-height: inherit
+    opacity: .64
+    margin-bottom: 0
+    .title
+      h1
+        color: #fff
+        font-size: 45px
+        letter-spacing: 7px
+        margin-bottom: 10px
+        font-weight: lighter
+        font-family: $main-copy
+        line-height: 50px
+        @media screen and (max-width: 767px)
+          font-size: 25px
+          line-height: 35px
+      p
+        color: #16191C
+        line-height: 1.5
+        letter-spacing: 3px
+        margin: 0 auto
+        text-transform: uppercase
+        font-weight: 400
+        font-size: 45px
+        font-family: $headings
+        @media screen and (max-width: 767px)
+          font-size: 25px
+          line-height: 35px
+.center-image
+  text-align: center
+  img
+    width: 20%
+.title
+  position: relative
+  color: #FFF
+  text-align: center
+  padding: 100px 0
+  display: block
+  margin: 0 auto
+  z-index: 5
+  h1
+    font-size: 45px
+    font-family: $headings
+    text-transform: uppercase
+    padding-bottom: 10px
+  p
+    color: #16191C
+    line-height: 1.5
+    margin: 0 auto
+
+.forward-block
+  background: #FFF
+  width: 100%
+  display: block
+  margin: 0 auto
+  padding: 40px 0
+  min-height: 175px
+  position: relative
+
+  .block-text
+    width: 70%
+    margin: 0 auto
+    position: absolute
+    top: 50%
+    left: 50%
+    -webkit-transform: translate(-50%,-50%)
+    -moz-transform: translate(-50%,-50%)
+    -o-transform: translate(-50%,-50%)
+    transform: translate(-50%,-50%)
+    @media screen and (max-width: 991px)
+      width: 85%
+    @media screen and (max-width: 767px)
+      width: 100%
+    p
+      font-size: 14px
+      font-family: $main-copy
+      width: 80%
+      margin: 0 auto
+      line-height: 20px
+      color: #7F8286
+      @media screen and (max-width: 767px)
+        width: 90%
+        font-size: 13px
+        line-height: 17px
+  .get-started-btn
+    background: #908EB5
+    width: 415px
+    height: 65px
+    border-radius: 5px
+    position: absolute
+    font-family: $main-copy
+    top: 0
+    left: 50%
+    -webkit-transform: translate(-50%, -50%)
+    -moz-transform: translate(-50%, -50%)
+    -o-transform: translate(-50%, -50%)
+    transform: translate(-50%,-50%)
+    text-align: center
+    color: #fff
+    font-weight: bold
+    text-decoration: none
+    line-height: 65px
+    @media screen and (max-width: 767px)
+      width: 285px
+      height: 55px
+      line-height: 55px
+      font-size: 14px
+.background-block
+  &.learn-sections
+    min-height: 415px
+    &:after
+      display: table
+      clear: both
+      content: ''
+    .block-half
+      width: 50%
+      float: left
+      @media screen and (max-width: 767px)
+        float: none
+        display: block
+        width: 100%
+        padding-top: 20px
+      &.class
+        background: $class-purple
+        h3
+          text-align: center
+          font-family: $headings
+          color: #fff
+          font-size: 25px
+          font-weight: 300
+          letter-spacing: 2px
+          margin-bottom: 40px
+        .icon-center
+          width: 200px
+          height: 200px
+          margin: 0 auto
+          background-color: $class-icon
+          border-radius: 100%
+          text-align: center
+          img
+            width: 50%
+            position: relative
+            top: 50px
+        .block-footer
+          background: $class-icon
+          a
+            color: #fff
+            text-decoration: none
+            font-weight: bold
+            letter-spacing: 1px
+      &.course
+        background: $course-green
+        h3
+          text-align: center
+          font-family: $headings
+          color: #fff
+          font-size: 25px
+          font-weight: 300
+          letter-spacing: 3px
+          margin-bottom: 40px
+        .icon-center
+          width: 200px
+          height: 200px
+          margin: 0 auto
+          background-color: $course-icon
+          border-radius: 100%
+          text-align: center
+          img
+            width: 50%
+            position: relative
+            top: 50px
+        .block-footer
+          background-color: $course-icon
+          a
+            color: #B8D2CC
+            text-decoration: none
+            font-weight: 200
+            letter-sapcing: 1px
+            pointer-events: none
+            cursor: default
+      .block-body
+        margin: 0 auto
+        width: 300px
+        margin-bottom: 40px
+        p
+          color: #fff
+          font-weight: 200
+          font-size: 14px
+          font-family: $main-copy
+          line-height: 20px
+          margin-top: 40px
+      .block-footer
+        text-align: center
+        color: #fff
+        padding: 10px
+.info-block
+  width: 100%
+  background: #eee
+  padding-top: 125px
+  position: relative
+  @media screen and (max-width: 767px)
+    padding-top: 50px
+  h1
+    text-align: center
+    margin: 0
+    color: #4A4A4A
+    font-family: $headings
+    @media screen and (max-width: 615px)
+      font-size: 18px
+  .icon-center
+    text-align: center
+    padding: 92px 0
+    @media (max-width: 767px)
+      padding: 55px 0
+    img
+      width: 40%
+      @media screen and (max-width: 767px)
+        width: 300px
+  .grid
+    width: 100%
+    position: relative
+    padding: 62px 0 162px 0
+    @media (max-width: 767px)
+      padding: 62px 0 50px 0
+    &:after
+      display: table
+      clear: both
+      content: ''
+    .tile
+      text-decoration: none
+      color: #4a4a4a
+      font-family: $headings
+      float: left
+      width: 30%
+      margin-left: 1.6%
+      &:first-child
+        margin-left: 3.4%
+      .tile-top
+        text-align: center
+        width: 100%
+        border-radius: 5px 5px 0 0
+        padding: 40px 0
+        &.first-tile
+          background-color: #94CFB8
+        &.second-tile
+          background-color: #82C1EF
+        &.third-tile
+          background-color: #FB8D7C
+        img
+          width: 30%
+      .tile-bottom
+        width: 100%
+        background-color: #fff
+        text-align: center
+        padding: 10px 0
+.theWorks
+  position: relative
+  width: 100%
+  min-height: 300px
+  .text-container
+    min-height: 300px
+    width: 65%
+    margin: 0 auto
+    padding: 100px 0
+    @media screen and (max-width: 445px)
+      width: 85%
+    h1
+      text-align: center
+      color: #5C5E76
+      font-family: $headings
+      @media screen and (max-width: 445px)
+        font-size: 28px
+    p
+      color: #7F8286
+      line-height: 25px
+      font-family: $main-copy
+      @media screen and (max-width: 445px)
+        font-size: 14px
+        line-height: 21px
+    .btn-center
+      text-align: center
+      margin-top: 50px
+      a
+        text-decoration: none
+        color: #5C5E76
+        border: 1px solid #5C5E76
+        padding: 12px 35px
+        border-radius: 3px
+        &:hover
+          background: #2ECC71
+          border-color: #2ECC71
+          color: #fff
+
+.footer
+  width: 100%
+  height: 45px
+  bottom: 0
+  left: 0
+  background-color: #373837
+
+//Media Queries
+@media screen and (max-width: 767px)
+  .info-block .grid .tile
+    float: none
+    width: 80%
+    display: block
+    margin: 0 auto
+    margin-bottom: 35px
+    &:first-child
+      margin: 0 auto
+      margin-bottom: 35px

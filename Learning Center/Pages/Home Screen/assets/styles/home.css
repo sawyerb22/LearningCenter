@@ -1,0 +1,421 @@
+@import url(http://fonts.googleapis.com/css?family=Varela+Round|Open+Sans:600italic,400,300,600,700);
+/* line 11, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+body, html {
+  width: 100%;
+  height: 100%; }
+
+/* line 14, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif; }
+
+/* line 18, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+a {
+  font-family: 'Open Sans', sans-serif; }
+
+/* line 20, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  @media screen and (max-width: 1700px) {
+    .wrapper {
+      max-width: 1700px;
+      margin: 0 auto; } }
+
+/* line 28, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+.background-block.cover-filter {
+  display: block;
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  height: 800px; }
+/* line 38, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+.background-block.feature-top {
+  background-color: #7CC6B5;
+  min-height: inherit;
+  opacity: .64;
+  margin-bottom: 0; }
+  /* line 44, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+  .background-block.feature-top .title h1 {
+    color: #fff;
+    font-size: 45px;
+    letter-spacing: 7px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 50px; }
+    @media screen and (max-width: 767px) {
+      .background-block.feature-top .title h1 {
+        font-size: 25px;
+        line-height: 35px; } }
+  /* line 55, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+  .background-block.feature-top .title p {
+    color: #16191C;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 45px;
+    font-family: 'Varela Round', sans-serif; }
+    @media screen and (max-width: 767px) {
+      .background-block.feature-top .title p {
+        font-size: 25px;
+        line-height: 35px; } }
+
+/* line 67, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+.center-image {
+  text-align: center; }
+  /* line 69, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+  .center-image img {
+    width: 20%; }
+
+/* line 71, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+.title {
+  position: relative;
+  color: #FFF;
+  text-align: center;
+  padding: 100px 0;
+  display: block;
+  margin: 0 auto;
+  z-index: 5; }
+  /* line 79, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+  .title h1 {
+    font-size: 45px;
+    font-family: 'Varela Round', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 10px; }
+  /* line 84, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+  .title p {
+    color: #16191C;
+    line-height: 1.5;
+    margin: 0 auto; }
+
+/* line 89, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+.forward-block {
+  background: #FFF;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 40px 0;
+  min-height: 175px;
+  position: relative; }
+  /* line 98, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+  .forward-block .block-text {
+    width: 70%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    @media screen and (max-width: 991px) {
+      .forward-block .block-text {
+        width: 85%; } }
+    @media screen and (max-width: 767px) {
+      .forward-block .block-text {
+        width: 100%; } }
+    /* line 112, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+    .forward-block .block-text p {
+      font-size: 14px;
+      font-family: 'Open Sans', sans-serif;
+      width: 80%;
+      margin: 0 auto;
+      line-height: 20px;
+      color: #7F8286; }
+      @media screen and (max-width: 767px) {
+        .forward-block .block-text p {
+          width: 90%;
+          font-size: 13px;
+          line-height: 17px; } }
+  /* line 123, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+  .forward-block .get-started-btn {
+    background: #908EB5;
+    width: 415px;
+    height: 65px;
+    border-radius: 5px;
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 65px; }
+    @media screen and (max-width: 767px) {
+      .forward-block .get-started-btn {
+        width: 285px;
+        height: 55px;
+        line-height: 55px;
+        font-size: 14px; } }
+
+/* line 147, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+.background-block.learn-sections {
+  min-height: 415px; }
+  /* line 149, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+  .background-block.learn-sections:after {
+    display: table;
+    clear: both;
+    content: ''; }
+  /* line 153, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+  .background-block.learn-sections .block-half {
+    width: 50%;
+    float: left; }
+    @media screen and (max-width: 767px) {
+      .background-block.learn-sections .block-half {
+        float: none;
+        display: block;
+        width: 100%;
+        padding-top: 20px; } }
+    /* line 161, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+    .background-block.learn-sections .block-half.class {
+      background: #908EB5; }
+      /* line 163, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+      .background-block.learn-sections .block-half.class h3 {
+        text-align: center;
+        font-family: 'Varela Round', sans-serif;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        margin-bottom: 40px; }
+      /* line 171, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+      .background-block.learn-sections .block-half.class .icon-center {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        background-color: #817FA4;
+        border-radius: 100%;
+        text-align: center; }
+        /* line 178, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+        .background-block.learn-sections .block-half.class .icon-center img {
+          width: 50%;
+          position: relative;
+          top: 50px; }
+      /* line 182, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+      .background-block.learn-sections .block-half.class .block-footer {
+        background: #817FA4; }
+        /* line 184, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+        .background-block.learn-sections .block-half.class .block-footer a {
+          color: #fff;
+          text-decoration: none;
+          font-weight: bold;
+          letter-spacing: 1px; }
+    /* line 189, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+    .background-block.learn-sections .block-half.course {
+      background: #7CC6B5; }
+      /* line 191, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+      .background-block.learn-sections .block-half.course h3 {
+        text-align: center;
+        font-family: 'Varela Round', sans-serif;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 300;
+        letter-spacing: 3px;
+        margin-bottom: 40px; }
+      /* line 199, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+      .background-block.learn-sections .block-half.course .icon-center {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        background-color: #72B7A7;
+        border-radius: 100%;
+        text-align: center; }
+        /* line 206, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+        .background-block.learn-sections .block-half.course .icon-center img {
+          width: 50%;
+          position: relative;
+          top: 50px; }
+      /* line 210, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+      .background-block.learn-sections .block-half.course .block-footer {
+        background-color: #72B7A7; }
+        /* line 212, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+        .background-block.learn-sections .block-half.course .block-footer a {
+          color: #B8D2CC;
+          text-decoration: none;
+          font-weight: 200;
+          letter-sapcing: 1px;
+          pointer-events: none;
+          cursor: default; }
+    /* line 219, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+    .background-block.learn-sections .block-half .block-body {
+      margin: 0 auto;
+      width: 300px;
+      margin-bottom: 40px; }
+      /* line 223, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+      .background-block.learn-sections .block-half .block-body p {
+        color: #fff;
+        font-weight: 200;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 20px;
+        margin-top: 40px; }
+    /* line 230, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+    .background-block.learn-sections .block-half .block-footer {
+      text-align: center;
+      color: #fff;
+      padding: 10px; }
+
+/* line 234, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+.info-block {
+  width: 100%;
+  background: #eee;
+  padding-top: 125px;
+  position: relative; }
+  @media screen and (max-width: 767px) {
+    .info-block {
+      padding-top: 50px; } }
+  /* line 241, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+  .info-block h1 {
+    text-align: center;
+    margin: 0;
+    color: #4A4A4A;
+    font-family: 'Varela Round', sans-serif; }
+    @media screen and (max-width: 615px) {
+      .info-block h1 {
+        font-size: 18px; } }
+  /* line 248, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+  .info-block .icon-center {
+    text-align: center;
+    padding: 92px 0; }
+    @media (max-width: 767px) {
+      .info-block .icon-center {
+        padding: 55px 0; } }
+    /* line 253, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+    .info-block .icon-center img {
+      width: 40%; }
+      @media screen and (max-width: 767px) {
+        .info-block .icon-center img {
+          width: 300px; } }
+  /* line 257, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+  .info-block .grid {
+    width: 100%;
+    position: relative;
+    padding: 62px 0 162px 0; }
+    @media (max-width: 767px) {
+      .info-block .grid {
+        padding: 62px 0 50px 0; } }
+    /* line 263, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+    .info-block .grid:after {
+      display: table;
+      clear: both;
+      content: ''; }
+    /* line 267, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+    .info-block .grid .tile {
+      text-decoration: none;
+      color: #4a4a4a;
+      font-family: 'Varela Round', sans-serif;
+      float: left;
+      width: 30%;
+      margin-left: 1.6%; }
+      /* line 274, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+      .info-block .grid .tile:first-child {
+        margin-left: 3.4%; }
+      /* line 276, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+      .info-block .grid .tile .tile-top {
+        text-align: center;
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+        padding: 40px 0; }
+        /* line 281, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+        .info-block .grid .tile .tile-top.first-tile {
+          background-color: #94CFB8; }
+        /* line 283, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+        .info-block .grid .tile .tile-top.second-tile {
+          background-color: #82C1EF; }
+        /* line 285, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+        .info-block .grid .tile .tile-top.third-tile {
+          background-color: #FB8D7C; }
+        /* line 287, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+        .info-block .grid .tile .tile-top img {
+          width: 30%; }
+      /* line 289, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+      .info-block .grid .tile .tile-bottom {
+        width: 100%;
+        background-color: #fff;
+        text-align: center;
+        padding: 10px 0; }
+
+/* line 294, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+.theWorks {
+  position: relative;
+  width: 100%;
+  min-height: 300px; }
+  /* line 298, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+  .theWorks .text-container {
+    min-height: 300px;
+    width: 65%;
+    margin: 0 auto;
+    padding: 100px 0; }
+    @media screen and (max-width: 445px) {
+      .theWorks .text-container {
+        width: 85%; } }
+    /* line 305, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+    .theWorks .text-container h1 {
+      text-align: center;
+      color: #5C5E76;
+      font-family: 'Varela Round', sans-serif; }
+      @media screen and (max-width: 445px) {
+        .theWorks .text-container h1 {
+          font-size: 28px; } }
+    /* line 311, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+    .theWorks .text-container p {
+      color: #7F8286;
+      line-height: 25px;
+      font-family: 'Open Sans', sans-serif; }
+      @media screen and (max-width: 445px) {
+        .theWorks .text-container p {
+          font-size: 14px;
+          line-height: 21px; } }
+    /* line 318, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+    .theWorks .text-container .btn-center {
+      text-align: center;
+      margin-top: 50px; }
+      /* line 321, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+      .theWorks .text-container .btn-center a {
+        text-decoration: none;
+        color: #5C5E76;
+        border: 1px solid #5C5E76;
+        padding: 12px 35px;
+        border-radius: 3px; }
+        /* line 327, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+        .theWorks .text-container .btn-center a:hover {
+          background: #2ECC71;
+          border-color: #2ECC71;
+          color: #fff; }
+
+/* line 332, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+.footer {
+  width: 100%;
+  height: 45px;
+  bottom: 0;
+  left: 0;
+  background-color: #373837; }
+
+@media screen and (max-width: 767px) {
+  /* line 340, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+  .info-block .grid .tile {
+    float: none;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 35px; }
+    /* line 346, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/Home Screen/assets/styles/home.sass */
+    .info-block .grid .tile:first-child {
+      margin: 0 auto;
+      margin-bottom: 35px; } }
+
+/*# sourceMappingURL=home.css.map */

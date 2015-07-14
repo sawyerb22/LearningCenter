@@ -42,6 +42,8 @@
       right: 150px
       top: 50%
       transform: translateY(-50%)
+      -webkit-transform: translateY(-50%)
+      -moz-transform: translateY(-50%)
       img
         margin: 0 auto
         margin-top: 40px
@@ -61,3 +63,92 @@
           color: $base_green
         span
           color: $base_green
+@media screen and (max-width: 1147px)
+  .content-wrap
+    .content
+      .hero-top
+        height: 400px
+        .hero-center
+          width: 50%
+          p
+            font-size: 14px
+      .hero-button
+        margin-top: 40px
+@media screen and (max-width: 991px)
+  .content-wrap
+    .content
+      .icon-badge
+        right: 65px
+    .acc-container
+      .accordion .acc-open .acc-drawer
+        position: relative
+        bottom: 4px
+      .accordion .acc-open .acc-drawer li.video-track a
+        font-size: 12px
+      .accordion .acc-open .acc-drawer li.video-track a i
+        margin-right: 15px
+        left: 5px
+      li
+        a
+          .feature-content
+            display: inline-block
+            position: relative
+            left: 45px
+            width: calc(90% - 45px)
+            float: left
+            padding-bottom: 25px
+            h3
+              font-size: 12px
+            p
+              margin-top: 4px
+              font-size: 12px
+          .badge-container
+            float: left
+          .badge
+            display: inline-block
+            width: 65px
+            height: 65px
+            border-radius: 100%
+            position: relative
+            float: left
+            top: 25px
+            left: 15px
+
+@media screen and (max-width: 625px)
+  .content-wrap
+    .content
+      .icon-badge
+        right: 25px
+      .hero-top
+        .hero-center
+          width: 60%
+@media screen and (max-width: 530px)
+  .content-wrap
+    .content
+      .hero-button
+        position: relative
+        display: block
+        margin: 15px auto
+        right: 0
+      .hero-top
+        padding-left: 0
+        .hero-center
+          width: 90%
+          display: block
+          margin: 0 auto
+          p
+            font-size: 14px
+          .title
+            margin-top: 140px
+      .icon-badge
+        width: 100px
+        height: 100px
+        position: absolute
+        top: 65px
+        left: 50%
+        -webkit-transform: translateX(-50%)
+        -moz-transform: translateX(-50%)
+        -o-transform: translateX(-50%)
+        transform: translateX(-50%)
+        img
+          margin-top: 28px

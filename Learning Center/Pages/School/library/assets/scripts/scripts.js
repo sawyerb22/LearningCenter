@@ -1,7 +1,8 @@
 $(document).ready(function(){
   var divs = $('div[data-filter]');
   $('#search').on('keyup', function() {
-      var val = $.trim(this.value);
+      $('#search')
+      var val = $.trim(this.value).toLowerCase();
       divs.hide();
       divs.filter(function() {
           return $(this).data('filter').search(val) >= 0

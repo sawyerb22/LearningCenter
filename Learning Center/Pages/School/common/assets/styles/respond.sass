@@ -7,7 +7,14 @@
     .content
       .hero-top
         height: 400px
+
 @media screen and (max-width: 991px)
+  .acc-container
+    li
+      a
+        padding-bottom: 0
+    .accordion
+      overflow: hidden
   #video-container
     margin-bottom: 0
     video
@@ -25,6 +32,7 @@
           padding-top: 25px
           position: relative
           width: 100%
+          padding-bottom: 100px
           h3
             margin-top: 0
 @media screen and (max-width: 767px)
@@ -44,6 +52,15 @@
         top: 7px
       .progressBar
         top: 6px
+  .welcome-quiz
+    opacity: 1 !important
+    .modal-body
+      top: 0 !important
+      -webkit-transform: translateX(-50%)!important
+      -moz-transform: translateX(-50%)!important
+      -o-transform: translateX(-50%)!important
+      transform: translateX(-50%)!important
+      width: 100%
 @media screen and (max-width: 640px)
   #video-container
     .control
@@ -65,22 +82,23 @@
       z-index: 100
       text-align: center
       ul
+        display: table
+        width: 100%
+        height: 100%
         li
-          display: inline-block
-          margin-top: 15px
-          margin-right: 50px
-          &:first-child
-            margin-top: 0
-          &:last-child
-            margin-right: 0
+          display: table-cell
+          width: 25%
+          margin-top: 0
+          margin-right: 0
+          height: 100%
+          vertical-align: middle
+          a
+            i
+              font-size: 7vw //delete if you dont like size
     .content
       width: 100%
       left: 0
-      .curriculum
 
-        .curriculum-center
-
-        .about
 
 @media screen and (max-width: 399px)
   #video-container

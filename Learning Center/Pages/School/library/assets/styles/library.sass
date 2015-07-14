@@ -48,8 +48,8 @@
   #search
     width: 65%
     font-size: 16px
-    line-height: 64px
-    height: 64px
+    line-height: 62px
+    height: 62px
     -webkit-appearance: none
     outline: 0
     border: 0
@@ -58,6 +58,8 @@
 .topic-wrap
   background: #F3F6F9
   padding: 15px 30px
+  @media (max-width: 767px)
+    padding: 15px 0
   .section-title
     .topic-text
       display: inline-block
@@ -81,7 +83,106 @@
         display: table
         clear: both
         zoom: 1
-        /* For IE 6/7*/
+      .tile
+        width: 23.8%
+        margin: 1% 0 1% 1.6%
+        padding: 25px
+        border: 1px solid #e0e0df
+        border-top: 8px solid #2ECC71
+        float: left
+        display: block
+        &:nth-child(5)
+          margin-left: 0
+        background: #fff
+        @media (max-width: 1167px)
+          width: 32.26%
+          &:nth-child(1)
+            margin: 1% 0 1% 0
+          &:nth-child(2)
+            margin: 1% 0 1% 1.6%
+          &:nth-child(3)
+            margin: 1% 0 1% 1.6%
+          &:nth-child(4)
+            margin: 1% 1.6% 1% 0
+          &:nth-child(5)
+            margin: 1% 0 1% 0
+          &:nth-child(6)
+            margin: 1% 0 1% 1.6%
+          &:nth-child(7)
+            margin: 1% 1.6% 1% 0
+          &:nth-child(8)
+            margin-left: 0       
+        @media (max-width: 950px)
+          width: 49.2%
+          &:nth-child(1)
+            margin: 1% 0 1% 0
+          &:nth-child(2)
+            margin: 1% 0 1% 1.6%
+          &:nth-child(3)
+            margin: 1% 0 1% 0%
+          &:nth-child(4)
+            margin: 1% 0% 1% 1.6%
+          &:nth-child(5)
+            margin: 1% 0 1% 0
+          &:nth-child(6)
+            margin: 1% 0 1% 1.6%
+          &:nth-child(7)
+            margin: 1% 1.6% 1% 0
+          &:nth-child(8)
+            margin-left: 0
+        @media (max-width: 625px)
+          width: 100%
+          &:nth-child(n)
+            margin: 1.6% 0 1.6% 0
+          &:nth-child(2)
+            margin: 1.6% 0 1.6% 0
+          &:nth-child(3)
+            margin: 1.6% 0 1.6% 0%
+          &:nth-child(4)
+            margin: 1.6% 0 1.6% 0
+          &:nth-child(5)
+            margin: 1.6% 0 1.6% 0
+          &:nth-child(6)
+            margin: 1.6% 0 1.6% 0
+          &:nth-child(7)
+            margin: 1.6% 0 1.6% 0
+          &:nth-child(8)
+            margin: 1.6% 0 1.6% 0
+        .tile-inner
+          .topic
+            font-size: 18px
+            color: #2ECC71
+            margin-top: 0
+          .course-name
+            font-size: 17px
+            color: #8F969F
+          .course-info
+            font-size: 14px
+            color: #71839A
+        &.opacity
+          opacity: 0.85
+        &.red
+          border-top-color: $red
+          .topic
+            color: $red
+        &.center-blue
+          border-top-color: $center-blue
+          .topic
+            color: $center-blue
+        &.corange
+          border-top-color: $corange
+          .topic
+            color: $corange
+        &.cpurp
+          border-top-color: $cpurp
+          .topic
+            color: $cpurp
+        &.cyellow
+          border-top-color: $cyellow
+          .topic
+            color: $cyellow
+        &:first-child
+          margin-left: 0
       a
         text-decoration: none
       .topic-tile
@@ -90,7 +191,7 @@
         width: 18.72%
         margin: 1% 0 1% 1.6%
         box-shadow: 0 1px 4px #CED2E2
-        border-radius: 5px 5px 0 0
+        border-radius: 5px
         text-align: center
         padding: 15px 0 85px 0
         position: relative
@@ -98,6 +199,30 @@
           margin-left: 0
         &:nth-child(6)
           margin-left: 0
+        &.opacity-tile
+          opacity: 0.85
+          a
+            opacity: 0.93!important
+        &.red
+          background-color: $red
+          a
+            color: $raccent
+        &.center-blue
+          background-color: $center-blue
+          a
+            color: $cbaccent
+        &.corange
+          background: $corange
+          a
+            color: $coaccent
+        &.cpurp
+          background-color: $cpurp
+          a
+            color: $purpaccent
+        &.cyellow
+          background: $cyellow
+          a
+            color: $cyaccent 
         &.base-green
           background: $base_green
           a
@@ -150,10 +275,11 @@
           line-height: 30px
           position: absolute
           bottom: 0
+          border-radius: 0 0 5px 5px
           .topic-title
             margin: 0
             font-weight: 400
-            font-size: 14px
+            font-size: 16px
             color: $text_gray
   .featured-classes
     border-bottom: 1px solid #ccc

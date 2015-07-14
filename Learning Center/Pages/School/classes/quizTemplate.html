@@ -1,9 +1,11 @@
-<div ng-show="!inProgress" class="welcome-quiz">
+<div ng-show="!inProgress" class="modal-overlay">
   <div class="modal-body">
+    <div class="icon-top">
+      <img src="../common/assets/images/SVG/overtime.svg" alt="OK Svg"/>
+    </div>
     <h3>Welcome To The Quiz!!</h3>
-    <p>We hope you enjoy this interactive quiz click below to get started!<br> Or if your not ready for a quiz, Theres no worries here! Come back when you've watched more of the videos!</p>
+    <p>We hope you enjoy this interactive quiz click below to get started! After you get started we would love to hear from you as we continue to enhance learning center. Enjoy!</p>
     <div class="buttons-wrapper">
-      <a href="class.html" class="back-videos">Watch More</a>
       <button ng-show="!inProgress" class="start" id="startQuiz" ng-click="start()">Start the Quiz</button>
     </div>
   </div>
@@ -11,7 +13,7 @@
 
  <div class="intro">
   <div class="quiz-tools">
-    <a href="class.html" class="action-back">Principles of Design</a>
+    <a href="/class" class="action-back">Principles of Design</a>
     <h2 ng-show="!inProgress">0/5</h2>
     <h2 ng-show="inProgress" id="question">{{id}}/5</h2>
   </div>
@@ -21,8 +23,8 @@
      <div class="answer-action" ng-show="!answerMode">
        <div class="correct-answer" ng-show="correctAns"><span>Nice Job!</span>That is correct!</div>
        <div class="wrong-answer" ng-show="!correctAns">
-         <span>Bummer! </span> Sorry, that is an incorrect answer.
-         <a href="#" class="get-help">Review Video</a>
+         <span>Sorry</span>thats Incorrect!
+         <!-- Commented out until the functionality is in place<a href="#" class="get-help">Review Video</a>-->
        </div>
        <button ng-click="nextQuestion()" class="next-question">Next Question</button>
      </div>
@@ -42,16 +44,20 @@
     </ul>
 
   </div>
-  <div ng-show="quizOver" class="quiz-finish">
-    <div class="modal-body" ng-show="quizOver">
-      <h2>That wasnt so bad!</h2>
-      <div ng-show="quizOver" id="score">
-        You Scored: + {{score}}
+  <div ng-show="quizOver" class="quiz-finish modal-overlay">
+  <div class="feedback-container">
+    <iframe src="https://docs.google.com/forms/d/1vcqYHEZlwbSpjfOD32bk2qU_S61L0w1ECJKcn2TOI2M/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" scrolling="yes">Loading...</iframe>
+  </div>
+    <div class="modal-body">
+      <div class="icon-top">
+        <img src="../common/assets/images/SVG/ok.svg" alt="OK Svg"/>
       </div>
-      <button ng-click="start()" ng-click="reset()">Play again</button>
+      <h3>You Got {{score}} Right!</h3>
+      <p> We hope you enjoy this interactive quiz click below to get started! After you get started we would love to hear from you as we continue to enhance learning center. Enjoy!</p>
+      <div class="buttons-wrapper">
+        <button class="feedback">Provide Feedback</button> 
+        <button class="start" id="startQuiz" ng-click="start()" ng-click="reset">Play Again</button>
+      </div>
     </div>
   </div>
-
 </div>
-
-

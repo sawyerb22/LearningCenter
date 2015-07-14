@@ -34,92 +34,84 @@
              <img src="../common/assets/images/SVG/stationery.svg" alt="design-badge" />
            </div>
          </section>
-
-
          <div id="video-container" class="top-content">
-          <!-- Video -->
-          <video preload="metadata" id="video">
-            <source src="assets/videos/fundimental.mp4" type="video/mp4">
-            <p>
-              Your browser doesn't support HTML5 video.
-              <a href="videos/mikethefrog.mp4">Download</a> the video instead.
-            </p>
-          </video>
-          <!-- Video Controls -->
-          <div class="control">
-            <button class="btnPlay icon-play-arrow"></button>
-            <div class="progressTime">
-             <span class="current"></span>
-               <div class="progressBar">
-                 <div class="timeBar"></div>
-               </div>
-             <!--<span class="duration"></span>-->
+           <div class="lc-video">
+            <!-- Video -->
+            <video preload="metadata" id="video">
+              <source src="assets/videos/fundimental.mp4" type="video/mp4">
+              <p>
+                Your browser doesn't support HTML5 video.
+                <a href="videos/mikethefrog.mp4">Download</a> the video instead.
+              </p>
+            </video>
+            <!-- Video Controls -->
+            <div class="control">
+              <button class="btnPlay icon-play-arrow"></button>
+              <div class="progressTime">
+               <span class="current"></span>
+                 <div class="progressBar">
+                   <div class="timeBar"></div>
+                 </div>
+               <!--<span class="duration"></span>-->
+              </div>
+              <button class="muted icon-volume-up"></button>
+              <!--<div class="volumeBar">
+                 <div class="volume"></div>
+              </div>-->
+              <button class="fullscreen icon-fullscreen"></button>
             </div>
-            <button class="muted icon-volume-up"></button>
-            <div class="volumeBar">
-               <div class="volume"></div>
+           </div>
+           <div class="video-actions">
+            <div class="actions">
+              <button class="rewatch">Rewatch video</button>
+              <a class="take-quiz" href="quiz.html">Take The Quiz</a>
+              <button class="next-video">Next Video</button>
             </div>
-            <button class="fullscreen icon-fullscreen"></button>
-          </div>
-          <div class="video-actions">
-            <button class="rewatch">Rewatch video</button>
-            <a class="next-video" href="quiz.html">Take The Quiz</a>
-<!--        <button class="next-video" href="assets/videos/Flatui.mp4">Watch Next Video</button>-->
           </div>
         </div>
-
          <section class="curriculum">
            <div class="curriculum-center">
              <div class="acc-container">
               <ul class="accordion">
                 <li class="acc-lv1">
                   <a class="sub-level" href="#">
-                    <div class="badge class-salmon">
-                      <img src="../common/assets/images/SVG/paint_palette.svg" alt="alt"/>
-                    </div>
-                    <div class="feature-content">
-                      <h3>Color Therory</h3>
-                      <p>
-                        Colors are one of the most intricate pieces in a design.
-                        Learn how to place colors that work together.
-                      </p>
+                    <div class="acc-body">
+                      <div class="badge-container">
+                        <div class="badge class-salmon">
+                          <img src="../common/assets/images/SVG/paint_palette.svg" alt="alt"/>
+                        </div>
+                      </div>
+                      
+                      <div class="feature-content">
+                        <h3>Color Therory</h3>
+                        <p>
+                          Colors are one of the most intricate pieces in a design.
+                          Learn how to place colors that work together.
+                        </p>
+                      </div>
                     </div>
                     <div class="acc-footer">
-                      <span class="steps">0/6</span>
+                      <span class="steps">0/3</span>
                     </div>
                   </a>
-                  <ul class="sub-menu acc-drawer">
-                    <li class="video-track">
-                      <a href="assets/videos/fundimental.mp4">
-                       <i class="icon-play-circle-outline"></i>
-                        What is Color Therory? <span class="time-total">2:42</span>
-                      </a>
-                    </li>
-                    <li class="video-track">
-                      <a href="assets/videos/Flatui.mp4">
-                       <i class="icon-play-circle-outline"></i>
-                        Colors In Design <span class="time-total">1:25</span>
-                      </a>
-                    </li>
-                    <li class="video-track">
-                      <a href="assets/videos/Charmed%20Lyric%20Video-HD.mp4">
-                       <i class="icon-play-circle-outline"></i>
-                        Makeing A Great Color Palette <span class="time-total">12:55</span>
-                      </a>
-                    </li>
+                  <ul id="colorTherory" class="sub-menu acc-drawer">
+                    <!--JSON Content Inserted Here -->
                   </ul>
                 </li>
+                <!-- Add Content To JSON database
                 <li class="acc-lv1">
                   <a class="sub-level" href="#">
-                    <div class="badge cool-green">
-                      <img src="../common/assets/images/SVG/drafting_compass.svg" alt="alt"/>
-                    </div>
-                    <div class="feature-content">
-                      <h3>Designing For The Modern World</h3>
-                      <p>
-                         Design Changes, almost on a daily basis but we can stay on top of that.
-                         Learn how to work for the future in your designs.
-                      </p>
+                    <div class="acc-body">
+                      <div class="badge cool-green">
+                        <img src="../common/assets/images/SVG/drafting_compass.svg" alt="alt"/>
+                      </div>
+                      <div class="feature-content">
+                        <h3>Designing For The Modern World</h3>
+                        <p>
+                           Design Changes, almost on a daily basis but we can stay on top of that.
+                           Learn how to work for the future in your designs.
+                        </p>
+                      </div>
                     </div>
                     <div class="acc-footer">
                       <span class="steps">0/3</span>
@@ -148,16 +140,18 @@
                 </li>
                 <li class="acc-lv1">
                   <a class="sub-level" href="#">
-                    <div class="badge class-blue">
-                      <img src="../common/assets/images/SVG/radar.svg" alt="alt"/>
-                    </div>
-                    <div class="feature-content">
-                      <h3>What Is Mobile Design?</h3>
-                      <p>
-                        Have you ever herd of mobile design, and wondered what it meant?
-                        We will go through it in this course and show you how to design for
-                        that thing you cant let out of your hand.
-                      </p>
+                    <div class="acc-body">
+                      <div class="badge class-blue">
+                        <img src="../common/assets/images/SVG/radar.svg" alt="alt"/>
+                      </div>
+                      <div class="feature-content">
+                        <h3>What Is Mobile Design?</h3>
+                        <p>
+                          Have you ever herd of mobile design, and wondered what it meant?
+                          We will go through it in this course and show you how to design for
+                          that thing you cant let out of your hand.
+                        </p>
+                      </div>
                     </div>
                     <div class="acc-footer">
                       <span class="steps">0/4</span>
@@ -183,14 +177,23 @@
                       </a>
                     </li>
                   </ul>
-                </li>
+                </li>-->
               </ul>
             </div>
            </div>
            <div class="about">
+             <div class="downloads">
+             	<h3>Download Files</h3>
+                <ul>
+                  <li><a href="assets/images/Laptopmacbook.png" target="blank">macbook_icon.png</a></li>
+                  <li><a href="/media/file.pdf" target="blank">assets.zip</a></li>
+      
+                </ul>
+           	 </div>
               <h3>Class Instructor</h3>
               <h4>Jonny Ive</h4>
               <p class="about-teach">
+                <img src="assets/images/jonny.png" alt="Jonny Ive" class="right-img" />
                 Jonny spends most of his
                 time working at apple where
                 he is busy designing things like

@@ -1,98 +1,137 @@
-/* line 2, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,700|Varela+Round|Open+Sans:400,300,600,700);
+/* line 5, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box; }
 
-/* line 6, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+/* line 9, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
 html, body {
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   padding: 0;
   margin: 0;
   height: 100%; }
-  /* line 11, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+  /* line 14, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+  html h1, html h2, html h3, html h4, html h5, html h6, html a, body h1, body h2, body h3, body h4, body h5, body h6, body a {
+    font-family: 'Oxygen', sans-serif; }
+  /* line 16, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+  html p, body p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 25px;
+    font-size: 14px;
+    margin: 0 0 28px 0; }
+  /* line 21, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
   html ul, body ul {
     padding-left: 0;
     margin: 0; }
-    /* line 14, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    /* line 24, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     html ul li, body ul li {
       list-style: none; }
 
-/* line 16, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+/* line 26, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
 .content-wrap {
   height: 100%;
   padding: 0;
   margin: 0; }
-  /* line 20, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+  /* line 30, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
   .content-wrap .side-bar {
     position: fixed;
     left: 0;
     width: 60px;
     height: 100%;
     background: #404951; }
-    /* line 27, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    /* line 37, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     .content-wrap .side-bar ul li {
       text-align: center;
       margin-bottom: 20px; }
-      /* line 30, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+      /* line 40, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
       .content-wrap .side-bar ul li:first-child {
         margin-top: 20px; }
-      /* line 32, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+      /* line 42, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
       .content-wrap .side-bar ul li:last-child {
         margin-bottom: 0; }
-      /* line 35, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+      /* line 45, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
       .content-wrap .side-bar ul li.active i {
         color: #50E3C2; }
-      /* line 37, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+      /* line 47, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
       .content-wrap .side-bar ul li a {
         text-decoration: none; }
-        /* line 39, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+        /* line 49, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
         .content-wrap .side-bar ul li a i {
           font-size: 25px;
           color: #7F8393; }
-  /* line 43, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+  /* line 53, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
   .content-wrap .content {
     width: calc(100% - 60px);
     height: 100%;
     position: relative;
     left: 60px; }
-    /* line 48, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    /* line 58, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     .content-wrap .content .hero-top {
       height: 400px;
       width: 100%;
       position: relative; }
-    /* line 52, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    /* line 62, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     .content-wrap .content .curriculum {
       width: 100%;
       height: 100%; }
-      /* line 55, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+      /* line 65, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
       .content-wrap .content .curriculum .curriculum-center {
         width: calc(100% - 300px);
         height: 100%;
         position: absolute;
         left: 0; }
-      /* line 60, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+      /* line 70, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
       .content-wrap .content .curriculum .about {
         width: 300px;
         height: 100%;
+        padding: 15px;
         background: #F3F6F9;
         border-left: 1px solid #DADCE3;
         position: absolute;
         right: 0; }
-        /* line 67, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+        /* line 78, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
         .content-wrap .content .curriculum .about h3 {
-          color: #6A6D7B; }
-        /* line 69, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+          color: #657380; }
+        /* line 80, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
         .content-wrap .content .curriculum .about h4 {
           color: #404951; }
+        /* line 82, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+        .content-wrap .content .curriculum .about .about-teach {
+          color: #657380;
+          font-size: 14px; }
+        /* line 85, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+        .content-wrap .content .curriculum .about .instructor {
+          margin-top: 30px; }
+        /* line 87, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+        .content-wrap .content .curriculum .about .about-teach {
+          color: #657380;
+          font-size: 14px; }
+        /* line 91, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+        .content-wrap .content .curriculum .about .downloads ul {
+          margin-bottom: 1em; }
+        /* line 93, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+        .content-wrap .content .curriculum .about li {
+          margin-bottom: .72em; }
+          /* line 95, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+          .content-wrap .content .curriculum .about li a::before {
+            content: '\e61b';
+            font-family: icomoon;
+            margin-right: 5px;
+            font-size: 14px; }
+          /* line 100, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+          .content-wrap .content .curriculum .about li a {
+            font-size: 16px;
+            color: #4e77a9;
+            text-decoration: none; }
 
-/* line 73, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+/* line 105, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
 #video-container {
   position: relative;
   background: #505B64;
-  height: 500px;
-  margin-bottom: 50px; }
-  /* line 78, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+  height: auto;
+  display: none; }
+  /* line 110, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
   #video-container video {
     width: 100%;
     height: auto;
@@ -100,31 +139,30 @@ html, body {
     border: 7px solid #343C42;
     border-bottom: 0;
     border-top: 0; }
-  /* line 85, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+  /* line 117, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
   #video-container .control {
     height: 50px;
     background: #404951;
     border-top: 1px solid #384047;
-    position: relative;
-    bottom: 4px; }
-    /* line 91, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    position: relative; }
+    /* line 122, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     #video-container .control .progressTime {
       width: 80%;
       display: inline-block;
       position: relative;
       bottom: 3px; }
-    /* line 96, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    /* line 127, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     #video-container .control .current {
       display: inline-block;
       color: #F3F6F9;
       position: relative;
       bottom: 2px;
       left: 15px; }
-    /* line 102, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    /* line 133, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     #video-container .control .duration {
       display: inline-block;
       color: #F3F6F9; }
-    /* line 105, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    /* line 136, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     #video-container .control .progressBar {
       cursor: pointer;
       display: inline-block;
@@ -136,7 +174,7 @@ html, body {
       display: block;
       float: left;
       top: 2px; }
-    /* line 116, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    /* line 147, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     #video-container .control .timeBar {
       position: absolute;
       top: 0;
@@ -145,7 +183,7 @@ html, body {
       height: 100%;
       background-color: #5FC6B8;
       border-radius: 5px; }
-    /* line 124, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    /* line 155, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     #video-container .control .btnPlay {
       background: 0;
       border: 0;
@@ -157,7 +195,7 @@ html, body {
       color: #F3F6F9;
       position: relative;
       top: 3px; }
-    /* line 135, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    /* line 166, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     #video-container .control .muted {
       display: inline-block;
       background: none;
@@ -169,10 +207,10 @@ html, body {
       color: #F3F6F9;
       outline: none;
       cursor: pointer; }
-    /* line 146, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    /* line 177, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     #video-container .control .volumeBar {
       display: inline-block; }
-    /* line 148, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    /* line 179, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     #video-container .control .fullscreen {
       display: inline-block;
       border: none;
@@ -185,51 +223,98 @@ html, body {
       right: 10px;
       cursor: pointer;
       outline: none; }
-  /* line 160, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+  /* line 191, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
   #video-container .video-actions {
     display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-    /* line 166, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    width: 100%;
+    height: 500px; }
+    /* line 195, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    #video-container .video-actions .actions {
+      position: relative;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -o-transform: translateY(-50%); }
+    /* line 203, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     #video-container .video-actions .rewatch {
       font-size: 18px;
       border: 4px solid #75809C;
       background: transparent;
-      padding: 18px 30px;
+      padding: 15px 30px;
       border-radius: 8px;
       outline: none;
       color: #fff;
       cursor: pointer; }
-      /* line 175, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+      /* line 212, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
       #video-container .video-actions .rewatch::before {
         content: '\e745';
         font-family: 'icomoon';
         margin-right: 15px; }
-      /* line 179, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+      /* line 216, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
       #video-container .video-actions .rewatch:hover {
         background: #75809c; }
-    /* line 181, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+      @media screen and (max-width: 515px) {
+        #video-container .video-actions .rewatch {
+          display: block;
+          margin: 0 auto 15px auto;
+          padding: 15px 5px;
+          width: 225px; } }
+    /* line 223, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     #video-container .video-actions .next-video {
       font-size: 18px;
       border: 4px solid #5FCF80;
       background: transparent;
-      padding: 18px 30px;
+      padding: 15px 30px;
+      width: 225px;
       border-radius: 8px;
       outline: none;
       color: #fff;
-      cursor: pointer; }
-      /* line 190, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+      cursor: pointer;
+      text-decoration: none; }
+      /* line 234, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
       #video-container .video-actions .next-video::after {
         content: '\e922';
         font-family: 'icomoon';
         margin-left: 15px; }
-      /* line 194, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+      /* line 238, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
       #video-container .video-actions .next-video:hover {
         background: #5FCF80; }
+      @media screen and (max-width: 515px) {
+        #video-container .video-actions .next-video {
+          display: block;
+          margin: 0 auto;
+          padding: 15px 5px; } }
+    /* line 244, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    #video-container .video-actions .take-quiz {
+      display: inline-block;
+      font-size: 18px;
+      border: 4px solid #9F87BF;
+      background: transparent;
+      padding: 15px 30px;
+      width: 225px;
+      border-radius: 8px;
+      outline: none;
+      color: #fff;
+      cursor: pointer;
+      text-decoration: none;
+      margin-left: 30px; }
+      /* line 257, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+      #video-container .video-actions .take-quiz::after {
+        content: '\e922';
+        font-family: 'icomoon';
+        margin-left: 15px; }
+      /* line 261, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+      #video-container .video-actions .take-quiz:hover {
+        background: #9F87BF; }
+      @media screen and (max-width: 515px) {
+        #video-container .video-actions .take-quiz {
+          display: block;
+          margin: 0 auto;
+          padding: 15px 5px; } }
 
-/* line 198, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+/* line 267, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
 .acc-container {
   display: block;
   position: relative;
@@ -238,48 +323,65 @@ html, body {
   height: 100%;
   background-color: #fff;
   overflow-x: auto; }
-  /* line 207, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+  /* line 276, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+  .acc-container li .acc-body {
+    min-height: 130px;
+    position: relative; }
+  /* line 279, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
   .acc-container li a {
     width: 100%;
-    height: 125px;
+    height: auto;
     display: inline-block;
     position: relative;
     background: #fff;
     text-decoration: none;
     color: #363636; }
-    /* line 215, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    @media screen and (max-width: 500px) {
+      .acc-container li a {
+        padding-bottom: 35px; } }
+    /* line 289, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    .acc-container li a .badge-container {
+      float: left; }
+    /* line 291, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     .acc-container li a .badge {
       display: inline-block;
       width: 65px;
       height: 65px;
       border-radius: 100%;
       position: relative;
-      top: 10px;
-      left: 25px; }
-      /* line 223, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+      top: 20px;
+      left: 20px; }
+      /* line 299, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
       .acc-container li a .badge img {
         width: 50%;
         display: block;
         margin: 0 auto;
         position: relative;
         top: 15px; }
-    /* line 229, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    /* line 305, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     .acc-container li a .feature-content {
       display: inline-block;
       position: relative;
       left: 45px;
       width: calc(90% - 45px); }
-      /* line 234, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+      @media (max-width: 544px) {
+        .acc-container li a .feature-content {
+          padding-top: 20px; } }
+      /* line 312, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
       .acc-container li a .feature-content h3 {
         font-size: 16px;
-        margin-bottom: 0; }
-      /* line 237, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+        margin-bottom: 0;
+        color: #657380; }
+      /* line 316, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
       .acc-container li a .feature-content p {
         margin-top: 8px;
         font-size: 13px;
         color: #707483;
         width: 75%; }
-    /* line 242, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+        @media (max-width: 544px) {
+          .acc-container li a .feature-content p {
+            line-height: 15px; } }
+    /* line 323, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     .acc-container li a .acc-footer {
       position: absolute;
       bottom: 0;
@@ -291,15 +393,15 @@ html, body {
       border-left: none;
       border-right: none;
       padding-left: 35px; }
-      /* line 253, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+      /* line 334, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
       .acc-container li a .acc-footer .steps {
         font-size: 13px;
         color: #707483; }
-  /* line 256, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+  /* line 337, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
   .acc-container .accordion {
     padding: 0;
     list-style: none; }
-    /* line 263, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    /* line 344, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     .acc-container .accordion .acc-lv1 a::after {
       content: "\e83f";
       font-family: 'icomoon';
@@ -307,7 +409,7 @@ html, body {
       bottom: 4px;
       left: 12px;
       color: #707483; }
-    /* line 270, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    /* line 351, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     .acc-container .accordion .acc-lv2 {
       max-height: 0;
       -webkit-transition: max-height 0.3s ease-out;
@@ -315,7 +417,7 @@ html, body {
       -o-transition: max-height 0.3s ease-out;
       transition: max-height 0.3s ease-out;
       overflow: hidden; }
-    /* line 277, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    /* line 358, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     .acc-container .accordion .acc-drawer {
       max-height: 0;
       height: 0;
@@ -326,51 +428,51 @@ html, body {
       -o-transition: max-height 0.3s ease-out;
       transition: max-height 0.3s ease-out;
       overflow: hidden; }
-      /* line 287, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+      /* line 368, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
       .acc-container .accordion .acc-drawer ul {
         list-style: none;
         padding: 0; }
-      /* line 291, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+      /* line 372, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
       .acc-container .accordion .acc-drawer a::after {
         content: ''; }
-      /* line 294, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+      /* line 375, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
       .acc-container .accordion .acc-drawer .sub-level::after {
         content: "\e647";
         font-family: 'icomoon';
         position: absolute;
         right: 15px;
         color: #fff; }
-      /* line 301, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+      /* line 382, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
       .acc-container .accordion .acc-drawer .social-links span {
         font-size: 0;
         display: inline-block;
         margin-right: 25px;
         text-align: center; }
-        /* line 306, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+        /* line 387, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
         .acc-container .accordion .acc-drawer .social-links span i {
           font-size: 25px; }
-      /* line 308, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+      /* line 389, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
       .acc-container .accordion .acc-drawer .sub-blue {
         border-bottom: 1px solid #efefef;
         display: none; }
-        /* line 311, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+        /* line 392, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
         .acc-container .accordion .acc-drawer .sub-blue .sub-level {
           background-color: #8fd4db;
           border-bottom: 1px solid #e7e7e7; }
-          /* line 314, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+          /* line 395, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
           .acc-container .accordion .acc-drawer .sub-blue .sub-level:last-child {
             border-bottom: 0; }
-      /* line 317, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+      /* line 398, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
       .acc-container .accordion .acc-drawer .acc-open .sub-level {
         border-bottom: 0; }
-        /* line 319, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+        /* line 400, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
         .acc-container .accordion .acc-drawer .acc-open .sub-level::after {
           content: "\e639";
           font-family: 'icomoon';
           position: absolute;
           right: 15px;
           color: #fff; }
-      /* line 325, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+      /* line 406, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
       .acc-container .accordion .acc-drawer .acc-open .acc-lv2 {
         max-height: 500px;
         -webkit-transition: max-height 0.3s ease-out;
@@ -380,18 +482,18 @@ html, body {
         display: block;
         background: #373837;
         padding: 15px; }
-    /* line 335, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    /* line 416, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     .acc-container .accordion .acc-open > a {
       background-color: #fff;
       border-bottom: 0; }
-      /* line 338, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+      /* line 419, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
       .acc-container .accordion .acc-open > a::after {
         content: "\e842";
         font-family: 'icomoon'; }
-    /* line 341, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    /* line 422, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     .acc-container .accordion .acc-open .no-padding {
       padding: 0 !important; }
-    /* line 343, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    /* line 424, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     .acc-container .accordion .acc-open .acc-drawer {
       max-height: 500px;
       -webkit-transition: max-height 0.3s ease-out;
@@ -402,49 +504,57 @@ html, body {
       display: block;
       height: auto;
       background-color: #F3F6F9;
-      padding: 15px 0;
+      padding: 0;
       border-bottom: 1px solid #DBDBDB; }
-      /* line 355, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+      /* line 436, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
       .acc-container .accordion .acc-open .acc-drawer li {
+        background: #F3F6F9;
+        text-decoration: none;
+        border-bottom: 0;
         border-bottom: none; }
-        /* line 357, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+        /* line 441, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
         .acc-container .accordion .acc-open .acc-drawer li.video-track {
-          height: 40px;
-          line-height: 40px; }
-          /* line 360, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
-          .acc-container .accordion .acc-open .acc-drawer li.video-track a {
-            color: #707483; }
-            /* line 362, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
-            .acc-container .accordion .acc-open .acc-drawer li.video-track a i {
-              font-size: 25px;
-              position: relative;
-              top: 4px;
-              left: 20px;
-              margin-right: 45px; }
-        /* line 369, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
-        .acc-container .accordion .acc-open .acc-drawer li a {
-          background: #F3F6F9;
-          text-decoration: none;
-          border-bottom: 0; }
-          /* line 375, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
-          .acc-container .accordion .acc-open .acc-drawer li a .time-total {
+          height: 50px;
+          line-height: 50px;
+          position: relative;
+          color: #707483;
+          cursor: pointer; }
+          /* line 447, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+          .acc-container .accordion .acc-open .acc-drawer li.video-track.active {
+            color: #fff !important;
+            font-weight: bold;
+            background: #5FCF80; }
+            /* line 451, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+            .acc-container .accordion .acc-open .acc-drawer li.video-track.active i {
+              color: #fff; }
+            /* line 453, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+            .acc-container .accordion .acc-open .acc-drawer li.video-track.active .time-total {
+              color: #fff; }
+          /* line 455, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+          .acc-container .accordion .acc-open .acc-drawer li.video-track i {
+            font-size: 25px;
+            position: relative;
+            top: 4px;
+            left: 20px;
+            margin-right: 45px; }
+            /* line 461, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+            .acc-container .accordion .acc-open .acc-drawer li.video-track i.icon-points_expense {
+              font-size: 22px; }
+          /* line 463, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+          .acc-container .accordion .acc-open .acc-drawer li.video-track .time-total {
             position: absolute;
             right: 15px; }
-      /* line 378, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+      /* line 466, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
       .acc-container .accordion .acc-open .acc-drawer .sub-blue {
         display: block;
         border-bottom: #e7e7e7; }
 
-/* line 381, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
-.next-video {
-  margin-left: 30px; }
-
-/* line 383, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+/* line 470, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
 .btn-block-center {
   display: block;
   margin: 0 auto; }
 
-/* line 386, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+/* line 473, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
 .hero-button {
   font-size: 15px;
   color: #fff;
@@ -454,11 +564,11 @@ html, body {
   cursor: pointer;
   outline: 0; }
 
-/* line 394, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+/* line 481, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
 .btn-neon {
   background: #50E3C2; }
 
-/* line 397, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+/* line 484, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
 .btn-flat {
   padding: 8px 30px;
   font-size: 14px;
@@ -467,76 +577,84 @@ html, body {
   border-radius: 5px;
   cursor: pointer;
   outline: none; }
-  /* line 405, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+  /* line 492, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
   .btn-flat.btn-lg {
     padding: 25px;
     font-size: 16px; }
-  /* line 408, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+  /* line 495, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
   .btn-flat.flat-gray {
     border-color: #7F8393;
     color: #fff; }
-    /* line 411, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    /* line 498, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     .btn-flat.flat-gray:hover {
       background: #7F8393; }
-  /* line 414, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+  /* line 501, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
   .btn-flat.flat-neon {
     border-color: #50E3C2;
     color: #50E3C2; }
-    /* line 417, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+    /* line 504, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     .btn-flat.flat-neon:hover {
       background: #50E3C2;
       color: #fff; }
 
-/* line 421, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+/* line 508, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
 .library-hero {
-  background: #2C3E50; }
+  background: #48535C; }
 
-/* line 423, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+/* line 510, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
 .class-green {
   background: #5FCF80; }
 
-/* line 425, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+/* line 512, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
 .cool-green {
   background: #5DBA99; }
 
-/* line 427, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+/* line 514, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
 .class-orange {
   background: #F58A70; }
 
-/* line 429, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+/* line 516, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
 .class-blue {
   background: #3498DB; }
 
-/* line 431, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+/* line 518, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
 .class-flat-blue {
   background: #4E77A9; }
 
-/* line 433, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+/* line 520, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
 .class-mustard-orange {
   background: #F39C12; }
 
-/* line 435, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+/* line 522, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
 .class-flat-gray {
   background: #6C8592; }
 
-/* line 437, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+/* line 524, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
 .class-soft-blue {
   background: #5CBBE0; }
 
-/* line 439, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+/* line 526, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
 .class-mint-green {
   background: #5FC6B8; }
 
-/* line 441, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+/* line 528, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
 .class-purple {
   background: #CA8FE2; }
 
-/* line 443, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+/* line 530, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
 .class-darker-pink {
   background-color: #D86881; }
 
-/* line 445, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+/* line 532, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
 .class-salmon {
   background: #F97669; }
+
+/* line 535, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
+.right-img {
+  float: right;
+  margin-left: 15px;
+  position: relative;
+  right: 10px;
+  bottom: 5px; }
 
 /*# sourceMappingURL=scaffold.css.map */
