@@ -37,7 +37,7 @@ html, body {
   .content-wrap .side-bar {
     position: fixed;
     left: 0;
-    width: 60px;
+    width: 50px;
     height: 100%;
     background: #404951; }
     /* line 37, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
@@ -58,14 +58,14 @@ html, body {
         text-decoration: none; }
         /* line 49, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
         .content-wrap .side-bar ul li a i {
-          font-size: 25px;
+          font-size: 22px;
           color: #7F8393; }
   /* line 53, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
   .content-wrap .content {
-    width: calc(100% - 60px);
+    width: calc(100% - 50px);
     height: 100%;
     position: relative;
-    left: 60px; }
+    left: 50px; }
     /* line 58, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/common/assets/styles/scaffold.sass */
     .content-wrap .content .hero-top {
       height: 400px;
