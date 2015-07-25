@@ -1,0 +1,33 @@
+//Google font
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,700|Varela+Round|Open+Sans:400,300,600,700)
+
+//Include Mixins
+@import 'includes/mixins'
+@import 'includes/vars'
+//Import Components
+@import 'imports/scaffold'
+@import 'imports/respond'
+@import 'imports/navigation'
+
+//Resets
+*
+  box-sizing: border-box
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+html, body
+  font-family: $main-copy
+  padding: 0
+  margin: 0
+  height: 100%
+  h1,h2,h3,h4,h5,h6,a
+    font-family: $oxygen
+  p
+    font-family: $main-copy
+    line-height: 25px
+    font-size: 14px
+    margin: 0 0 28px 0
+  ul
+    padding-left: 0
+    margin: 0
+    li
+      list-style: none

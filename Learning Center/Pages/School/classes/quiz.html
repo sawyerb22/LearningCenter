@@ -5,8 +5,7 @@
     <meta name="viewport" content="height=device-height">
     <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="../common/assets/fonts/fonts.css"/>
-    <link rel="stylesheet" type="text/css" href="../common/assets/styles/scaffold.css"/>
-    <link rel="stylesheet" type="text/css" href="../common/assets/styles/respond.css"/>
+    <link rel="stylesheet" type="text/css" href="../common/assets/styles/base.css"/>
     <link rel="stylesheet" type="text/css" href="assets/styles/class.css"/>
     <link rel="stylesheet" type="text/css" href="assets/styles/quiz/quiz.css"/>
     <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
@@ -16,15 +15,26 @@
   </head>
   <body>
    <div class="content-wrap">
-     <nav class="side-bar">
-       <ul>
+     <input id="toggle" type="checkbox" />
+     <nav class="side-bar main-nav-container" role="navigation">
+       <ul class="main-nav">
          <li><a href="#"><i class="icon icon-gauge"></i></a></li>
-         <li><a href="/learn/library"><i class="icon icon-school"></i></a></li>
+         <li><a href="#"><i class="icon icon-school"></i></a></li>
          <li><a href="#"><i class="icon icon-explore"></i></a></li>
-         <li class="active"><a href="/learn/class"><i class="icon icon-extension"></i></a></li>
+         <li class="active"><a href="#"><i class="icon icon-extension"></i></a></li>
        </ul>
      </nav>
        <div class="content">
+         <div class="content-inner">
+           <label for="toggle">
+             <div class="menu-icon-container">
+               <div class="menu-icon">
+                 <div class="menu-global menu-top"></div>
+                 <div class="menu-global menu-middle"></div>
+                 <div class="menu-global menu-bottom"></div>
+               </div>
+             </div>
+           </label>
          <section class="curriculum">
            <div class="curriculum-center container">
              <quiz/>
@@ -54,6 +64,7 @@
               </div>
            </div>
          </section>
+       </div>
        </div>
    </div>
 

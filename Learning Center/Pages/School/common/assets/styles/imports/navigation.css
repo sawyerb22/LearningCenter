@@ -1,0 +1,227 @@
+/* mixins */
+/* variables */
+* {
+  box-sizing: border-box; }
+
+h1, p {
+  color: white;
+  font-weight: 100; }
+
+h1 {
+  line-height: 1.2em; }
+
+body {
+  animation: bugfix infinite 1s;
+  background: #2e313c;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  line-height: 1.5rem;
+  position: relative; }
+
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0; }
+  to {
+    padding: 0; } }
+.content {
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  min-width: 300px; }
+  .content::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.content-inner {
+  float: left;
+  width: 100%;
+  margin-left: 0;
+  transition: all 0.55s ease-in-out 0s; }
+  .content-inner::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+header {
+  height: 100px;
+  position: relative;
+  width: 100%; }
+
+/* main nav */
+/* menu icon */
+.menu-icon-container {
+  display: block;
+  float: right;
+  height: 65px;
+  position: relative;
+  z-index: 999999; }
+  @media (min-width: 760px) {
+    .menu-icon-container {
+      display: none; } }
+
+.menu-icon {
+  cursor: pointer;
+  height: 40px;
+  position: relative;
+  top: 22px;
+  right: 20px;
+  transition: all 0.15s linear;
+  width: 40px; }
+
+.menu-global {
+  backface-visibility: hidden;
+  border-top: 2px solid white;
+  left: 0;
+  position: absolute;
+  transition: all 0.15s linear;
+  width: 96%; }
+
+.menu-top {
+  top: 0px; }
+
+.menu-middle {
+  top: 12px; }
+
+.menu-bottom {
+  top: 24px; }
+
+.menu-top-click {
+  top: 19px;
+  transform: rotate(48deg); }
+
+.menu-middle-click {
+  opacity: 0; }
+
+.menu-bottom-click {
+  top: 19px;
+  transform: rotate(-48deg); }
+
+/* gets rid of the browser-created checkbox */
+#toggle {
+  position: absolute;
+  left: -4000px; }
+
+/* styles the nav position */
+.content-wrap .side-bar {
+  background: #3e474f;
+  height: 100%;
+  overflow: auto;
+  right: -75%;
+  left: inherit;
+  top: 0;
+  padding: 0;
+  position: fixed;
+  width: 75%;
+  transition: all 0.55s ease-in-out 0s; }
+  @media (min-width: 760px) {
+    .content-wrap .side-bar {
+      float: left;
+      position: static;
+      background: transparent;
+      padding: 0;
+      height: auto;
+      transition: all 0.55s ease-in-out 0s; } }
+
+/* styles the nav */
+.main-nav {
+  margin: 0;
+  padding: 0; }
+  @media (min-width: 760px) {
+    .main-nav {
+      border: 0;
+      margin-left: -380px;
+      position: absolute;
+      top: 70px;
+      right: auto;
+      bottom: auto;
+      left: 50%;
+      z-index: 100; } }
+  @media (min-width: 1026px) {
+    .main-nav {
+      margin-left: -460px; } }
+
+.main-nav li {
+  display: block;
+  font-size: 1.2rem;
+  height: auto;
+  letter-spacing: 0.1rem;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase; }
+  @media (min-width: 760px) {
+    .main-nav li {
+      border: none;
+      color: #3e474f;
+      display: inline-block;
+      padding: 0 10px; } }
+
+.main-nav li a {
+  background: #3e474f;
+  color: #353535;
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 40px 0;
+  text-decoration: none; }
+  @media (min-width: 760px) {
+    .main-nav li a {
+      background: none;
+      color: #ff5e43;
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 100;
+      padding: 0;
+      transition: all 0.55s ease-in-out 0s; } }
+  .main-nav li a:hover {
+    background: #2c3238;
+    color: #54616c; }
+    @media (min-width: 760px) {
+      .main-nav li a:hover {
+        background: none;
+        color: white;
+        /* when the menu is clicked / checkbox checked */ } }
+
+input:checked ~ .side-bar {
+  right: 0;
+  z-index: 101; }
+  @media (min-width: 760px) {
+    input:checked ~ .side-bar {
+      background: transparent;
+      height: auto;
+      float: right;
+      padding: 0;
+      position: static;
+      width: 100%;
+      transition: all 0.55s ease-in-out 0s; } }
+input:checked ~ .content .content-inner {
+  position: fixed;
+  transform: translateX(-75%); }
+  @media (min-width: 760px) {
+    input:checked ~ .content .content-inner {
+      margin-left: 0%;
+      position: static;
+      transition: all 0.55s ease-in-out 0s; } }
+
+.content-wrap .content {
+  height: 100%;
+  padding: 0;
+  left: inherit;
+  width: 100%; }
+  @media (min-width: 760px) {
+    .content-wrap .content {
+      margin: 0 auto;
+      width: 760px; } }
+  @media (min-width: 1026px) {
+    .content-wrap .content {
+      margin: 0 auto;
+      width: 940px; } }
+  .content-wrap .content::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+/*# sourceMappingURL=navigation.css.map */

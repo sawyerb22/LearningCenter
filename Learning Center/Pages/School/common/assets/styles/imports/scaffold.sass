@@ -1,110 +1,54 @@
-//Google font
-@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,700|Varela+Round|Open+Sans:400,300,600,700)
-
-//Variable Colors
-@import 'includes/vars.sass'
-
-//Resets
-*
-  box-sizing: border-box
-  -webkit-box-sizing: border-box
-  -moz-box-sizing: border-box
-html, body
-  font-family: $main-copy
-  padding: 0
-  margin: 0
-  height: 100%
-  h1,h2,h3,h4,h5,h6,a
-    font-family: $oxygen
-  p
-    font-family: $main-copy
-    line-height: 25px
-    font-size: 14px
-    margin: 0 0 28px 0
-  ul
-    padding-left: 0
-    margin: 0
-    li
-      list-style: none
 //Scaffolding
 .content-wrap
   height: 100%
   padding: 0
   margin: 0
-  .side-bar
-    position: fixed
-    left: 0
-    width: 50px
-    height: 100%
-    background: $main_gray
-    ul
-      li
-        text-align: center
-        margin-bottom: 20px
-        &:first-child
-          margin-top: 20px
-        &:last-child
-          margin-bottom: 0
-        &.active
-          i
-            color: $neon_teal
-        a
-          text-decoration: none
-          i
-            font-size: 22px
-            color: $main_accent
-
-  .content
-    width: calc(100% - 50px)
-    height: 100%
+  .hero-top
+    height: 400px
+    width: 100%
     position: relative
-    left: 50px
-    .hero-top
-      height: 400px
-      width: 100%
-      position: relative
-    .curriculum
-      width: 100%
+  .curriculum
+    width: 100%
+    height: 100%
+    .curriculum-center
+      width: calc(100% - 300px)
       height: 100%
-      .curriculum-center
-        width: calc(100% - 300px)
-        height: 100%
-        position: absolute
-        left: 0
-      .about
-        width: 300px
-        height: 100%
-        padding: 15px
-        background: $column_gray
-        border-left: 1px solid #DADCE3
-        position: absolute
-        right: 0
-        h3
-          color: #657380
-        h4
-          color: #404951
-        .about-teach
-          color: #657380
-          font-size: 14px
-        .instructor 
-          margin-top: 30px
-        .about-teach 
-          color: #657380
-          font-size: 14px
+      position: absolute
+      left: 0
+    .about
+      width: 300px
+      height: 100%
+      padding: 15px
+      background: $column_gray
+      border-left: 1px solid #DADCE3
+      position: absolute
+      right: 0
+      h3
+        color: #657380
+      h4
+        color: #404951
+      .about-teach
+        color: #657380
+        font-size: 14px
+      .instructor
+        margin-top: 30px
+      .about-teach
+        color: #657380
+        font-size: 14px
 
-        .downloads ul 
-          margin-bottom: 1em
-        li 
-          margin-bottom: .72em
-          a::before 
-            content: '\e61b'
-            font-family: icomoon
-            margin-right: 5px
-            font-size: 14px
-          a 
-            font-size: 16px
-            color: #4e77a9
-            text-decoration: none
+      .downloads ul
+        margin-bottom: 1em
+      li
+        margin-bottom: .72em
+        a::before
+          content: '\e61b'
+          font-family: icomoon
+          margin-right: 5px
+          font-size: 14px
+        a
+          font-size: 16px
+          color: #4e77a9
+          text-decoration: none
 //Elements
 
 //Video Element
