@@ -1,43 +1,51 @@
 /* line 3, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+.content {
+  background: #F3F6F9; }
+
+/* line 5, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+.hide {
+  display: none; }
+
+/* line 7, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
 .hero-center {
   width: 65%;
   padding-top: 60px;
   margin: 0 auto; }
-  /* line 7, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+  /* line 11, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
   .hero-center i {
     font-size: 32px;
     color: #50E3C2;
     margin-right: 25px; }
-  /* line 11, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+  /* line 15, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
   .hero-center h3.title {
     font-size: 32px;
     display: block;
     color: #fff;
     text-align: center; }
-    /* line 16, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+    /* line 20, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
     .hero-center h3.title::before {
       content: "\e96a";
       font-family: 'icomoon';
       font-size: 25px;
       margin-right: 25px;
       color: #50E3C2; }
-  /* line 22, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+  /* line 26, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
   .hero-center p {
     font-size: 16px;
     line-height: 22px;
     color: #fff; }
 
-/* line 26, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+/* line 30, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
 .hero-btn {
   margin-top: 50px; }
 
-/* line 28, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+/* line 32, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
 .search-titlebar {
   height: 65px;
   width: 100%;
   background: #fff;
   border-bottom: 1px solid #DADCE3; }
-  /* line 33, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+  /* line 37, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
   .search-titlebar::before {
     content: "\e6df";
     font-family: 'icomoon';
@@ -48,223 +56,480 @@
     top: 4px;
     left: 15px;
     margin-right: 15px; }
-  /* line 43, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+  /* line 47, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
   .search-titlebar #search {
     width: 65%;
     font-size: 16px;
-    line-height: 64px;
-    height: 64px;
+    line-height: 62px;
+    height: 62px;
     -webkit-appearance: none;
     outline: 0;
     border: 0; }
-    /* line 51, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+    /* line 55, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
     .search-titlebar #search:focus {
       border-right: 1px solid #DADCE3; }
 
-/* line 53, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+/* line 57, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
 .topic-wrap {
   background: #F3F6F9;
   padding: 15px 30px; }
-  /* line 57, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+  @media (max-width: 767px) {
+    .topic-wrap {
+      padding: 15px 0; } }
+  /* line 63, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
   .topic-wrap .section-title .topic-text {
     display: inline-block; }
-    /* line 59, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+    /* line 65, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
     .topic-wrap .section-title .topic-text h3 {
       font-size: 16px;
       margin-bottom: 0; }
-    /* line 62, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+    /* line 68, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
     .topic-wrap .section-title .topic-text p {
       font-size: 13px;
       margin-top: 5px; }
-  /* line 65, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+  /* line 71, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
   .topic-wrap .section-title button.btn-flat {
     float: right;
     margin-top: 25px; }
-  /* line 68, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+  /* line 74, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
   .topic-wrap .topics {
     border-bottom: 1px solid #ccc; }
-    /* line 70, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-    .topic-wrap .topics .topic-tile-container {
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-      align-items: flex-start;
-      -webkit-align-content: flex-start;
-      -ms-flex-line-pack: start;
-      align-content: flex-start; }
-      /* line 83, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-      .topic-wrap .topics .topic-tile-container a {
-        text-decoration: none; }
-      /* line 85, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-      .topic-wrap .topics .topic-tile-container .topic-tile {
-        display: inline-block;
-        width: 20%;
-        padding: 16px;
-        box-shadow: 0 1px 4px #CED2E2;
-        border-radius: 5px 5px 0 0;
-        text-align: center;
-        height: 130px;
-        position: relative; }
-        /* line 94, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-        .topic-wrap .topics .topic-tile-container .topic-tile.base-green {
-          background: #5FCF80; }
-          /* line 96, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-          .topic-wrap .topics .topic-tile-container .topic-tile.base-green a {
-            color: #3D8653; }
-        /* line 98, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-        .topic-wrap .topics .topic-tile-container .topic-tile.soft-orange {
-          background: #F58A70; }
+    /* line 77, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+    .topic-wrap .topics .topic-tile-container:before {
+      content: "";
+      display: table; }
+    /* line 80, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+    .topic-wrap .topics .topic-tile-container:after {
+      content: "";
+      display: table;
+      clear: both;
+      zoom: 1; }
+    /* line 85, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+    .topic-wrap .topics .topic-tile-container .tile {
+      width: 23.8%;
+      margin: 1% 0 1% 1.6%;
+      padding: 25px;
+      border: 1px solid #e0e0df;
+      border-top: 8px solid #2ECC71;
+      float: left;
+      display: block;
+      background: #fff; }
+      /* line 93, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .tile:nth-child(5) {
+        margin-left: 0; }
+      @media (max-width: 1167px) {
+        .topic-wrap .topics .topic-tile-container .tile {
+          width: 32.26%; }
+          /* line 98, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+          .topic-wrap .topics .topic-tile-container .tile:nth-child(1) {
+            margin: 1% 0 1% 0; }
           /* line 100, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-          .topic-wrap .topics .topic-tile-container .topic-tile.soft-orange a {
-            color: #9A5646; }
-        /* line 102, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-        .topic-wrap .topics .topic-tile-container .topic-tile.blue-tile {
-          background: #3498DB; }
+          .topic-wrap .topics .topic-tile-container .tile:nth-child(2) {
+            margin: 1% 0 1% 1.6%; }
+          /* line 102, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+          .topic-wrap .topics .topic-tile-container .tile:nth-child(3) {
+            margin: 1% 0 1% 1.6%; }
           /* line 104, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-          .topic-wrap .topics .topic-tile-container .topic-tile.blue-tile a {
-            color: #246B9A; }
-        /* line 106, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-        .topic-wrap .topics .topic-tile-container .topic-tile.mustard-orange {
-          background: #F39C12; }
+          .topic-wrap .topics .topic-tile-container .tile:nth-child(4) {
+            margin: 1% 1.6% 1% 0; }
+          /* line 106, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+          .topic-wrap .topics .topic-tile-container .tile:nth-child(5) {
+            margin: 1% 0 1% 0; }
           /* line 108, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-          .topic-wrap .topics .topic-tile-container .topic-tile.mustard-orange a {
-            color: #895809; }
-        /* line 110, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-        .topic-wrap .topics .topic-tile-container .topic-tile.flat-gray {
-          background: #6C8592; }
+          .topic-wrap .topics .topic-tile-container .tile:nth-child(6) {
+            margin: 1% 0 1% 1.6%; }
+          /* line 110, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+          .topic-wrap .topics .topic-tile-container .tile:nth-child(7) {
+            margin: 1% 1.6% 1% 0; }
           /* line 112, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-          .topic-wrap .topics .topic-tile-container .topic-tile.flat-gray a {
-            color: #4B5E67; }
-        /* line 114, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-        .topic-wrap .topics .topic-tile-container .topic-tile.soft-blue {
-          background: #5CBBE0; }
+          .topic-wrap .topics .topic-tile-container .tile:nth-child(8) {
+            margin-left: 0; } }
+      @media (max-width: 950px) {
+        .topic-wrap .topics .topic-tile-container .tile {
+          width: 49.2%; }
           /* line 116, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-          .topic-wrap .topics .topic-tile-container .topic-tile.soft-blue a {
-            color: #377086; }
-        /* line 118, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-        .topic-wrap .topics .topic-tile-container .topic-tile.mint-green {
-          background: #5FC6B8; }
+          .topic-wrap .topics .topic-tile-container .tile:nth-child(1) {
+            margin: 1% 0 1% 0; }
+          /* line 118, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+          .topic-wrap .topics .topic-tile-container .tile:nth-child(2) {
+            margin: 1% 0 1% 1.6%; }
           /* line 120, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-          .topic-wrap .topics .topic-tile-container .topic-tile.mint-green a {
-            color: #35726A; }
-        /* line 122, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-        .topic-wrap .topics .topic-tile-container .topic-tile.purple {
-          background: #CA8FE2; }
+          .topic-wrap .topics .topic-tile-container .tile:nth-child(3) {
+            margin: 1% 0 1% 0%; }
+          /* line 122, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+          .topic-wrap .topics .topic-tile-container .tile:nth-child(4) {
+            margin: 1% 0% 1% 1.6%; }
           /* line 124, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-          .topic-wrap .topics .topic-tile-container .topic-tile.purple a {
-            color: #825A92; }
-        /* line 126, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-        .topic-wrap .topics .topic-tile-container .topic-tile.darker-pink {
-          background-color: #D86881; }
+          .topic-wrap .topics .topic-tile-container .tile:nth-child(5) {
+            margin: 1% 0 1% 0; }
+          /* line 126, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+          .topic-wrap .topics .topic-tile-container .tile:nth-child(6) {
+            margin: 1% 0 1% 1.6%; }
           /* line 128, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-          .topic-wrap .topics .topic-tile-container .topic-tile.darker-pink a {
-            color: #773846; }
-        /* line 130, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-        .topic-wrap .topics .topic-tile-container .topic-tile.salmon {
-          background: #F97669; }
-          /* line 132, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-          .topic-wrap .topics .topic-tile-container .topic-tile.salmon a {
-            color: #90423A; }
-        /* line 134, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-        .topic-wrap .topics .topic-tile-container .topic-tile i {
-          display: block;
-          position: relative;
-          top: 25px;
-          font-size: 45px; }
-        /* line 139, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-        .topic-wrap .topics .topic-tile-container .topic-tile .tile-footer {
-          width: 100%;
-          background: #fff;
-          height: 30px;
-          line-height: 30px;
-          position: absolute;
-          bottom: 0; }
+          .topic-wrap .topics .topic-tile-container .tile:nth-child(7) {
+            margin: 1% 1.6% 1% 0; }
+          /* line 130, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+          .topic-wrap .topics .topic-tile-container .tile:nth-child(8) {
+            margin-left: 0; } }
+      @media (max-width: 625px) {
+        .topic-wrap .topics .topic-tile-container .tile {
+          width: 100%; }
+          /* line 134, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+          .topic-wrap .topics .topic-tile-container .tile:nth-child(n) {
+            margin: 1.6% 0 1.6% 0; }
+          /* line 136, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+          .topic-wrap .topics .topic-tile-container .tile:nth-child(2) {
+            margin: 1.6% 0 1.6% 0; }
+          /* line 138, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+          .topic-wrap .topics .topic-tile-container .tile:nth-child(3) {
+            margin: 1.6% 0 1.6% 0%; }
+          /* line 140, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+          .topic-wrap .topics .topic-tile-container .tile:nth-child(4) {
+            margin: 1.6% 0 1.6% 0; }
+          /* line 142, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+          .topic-wrap .topics .topic-tile-container .tile:nth-child(5) {
+            margin: 1.6% 0 1.6% 0; }
+          /* line 144, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+          .topic-wrap .topics .topic-tile-container .tile:nth-child(6) {
+            margin: 1.6% 0 1.6% 0; }
           /* line 146, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-          .topic-wrap .topics .topic-tile-container .topic-tile .tile-footer .topic-title {
-            margin: 0;
-            font-weight: 400;
-            font-size: 14px;
-            color: #525252; }
-  /* line 151, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+          .topic-wrap .topics .topic-tile-container .tile:nth-child(7) {
+            margin: 1.6% 0 1.6% 0; }
+          /* line 148, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+          .topic-wrap .topics .topic-tile-container .tile:nth-child(8) {
+            margin: 1.6% 0 1.6% 0; } }
+      /* line 151, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .tile .tile-inner .topic {
+        font-size: 18px;
+        color: #2ECC71;
+        margin-top: 0; }
+      /* line 155, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .tile .tile-inner .course-name {
+        font-size: 17px;
+        color: #8F969F; }
+      /* line 158, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .tile .tile-inner .course-info {
+        font-size: 14px;
+        color: #71839A; }
+      /* line 161, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .tile.opacity {
+        opacity: 0.85; }
+      /* line 163, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .tile.red {
+        border-top-color: #E85D5D; }
+        /* line 165, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+        .topic-wrap .topics .topic-tile-container .tile.red .topic {
+          color: #E85D5D; }
+      /* line 167, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .tile.center-blue {
+        border-top-color: #21BDB7; }
+        /* line 169, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+        .topic-wrap .topics .topic-tile-container .tile.center-blue .topic {
+          color: #21BDB7; }
+      /* line 171, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .tile.corange {
+        border-top-color: #E69062; }
+        /* line 173, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+        .topic-wrap .topics .topic-tile-container .tile.corange .topic {
+          color: #E69062; }
+      /* line 175, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .tile.cpurp {
+        border-top-color: #9F87BF; }
+        /* line 177, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+        .topic-wrap .topics .topic-tile-container .tile.cpurp .topic {
+          color: #9F87BF; }
+      /* line 179, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .tile.cyellow {
+        border-top-color: #EFCE6A; }
+        /* line 181, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+        .topic-wrap .topics .topic-tile-container .tile.cyellow .topic {
+          color: #EFCE6A; }
+      /* line 183, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .tile:first-child {
+        margin-left: 0; }
+    /* line 185, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+    .topic-wrap .topics .topic-tile-container a {
+      text-decoration: none; }
+    /* line 187, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+    .topic-wrap .topics .topic-tile-container .topic-tile {
+      display: block;
+      float: left;
+      width: 18.72%;
+      margin: 1% 0 1% 1.6%;
+      box-shadow: 0 1px 4px #CED2E2;
+      border-radius: 5px;
+      text-align: center;
+      padding: 15px 0 85px 0;
+      position: relative; }
+      /* line 197, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile:first-child {
+        margin-left: 0; }
+      /* line 199, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile:nth-child(6) {
+        margin-left: 0; }
+      /* line 201, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile.opacity-tile {
+        opacity: 0.85; }
+        /* line 203, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+        .topic-wrap .topics .topic-tile-container .topic-tile.opacity-tile a {
+          opacity: 0.93 !important; }
+      /* line 205, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile.red {
+        background-color: #E85D5D; }
+        /* line 207, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+        .topic-wrap .topics .topic-tile-container .topic-tile.red a {
+          color: #AD4444; }
+      /* line 209, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile.center-blue {
+        background-color: #21BDB7; }
+        /* line 211, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+        .topic-wrap .topics .topic-tile-container .topic-tile.center-blue a {
+          color: #1C9490; }
+      /* line 213, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile.corange {
+        background: #E69062; }
+        /* line 215, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+        .topic-wrap .topics .topic-tile-container .topic-tile.corange a {
+          color: #BE7650; }
+      /* line 217, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile.cpurp {
+        background-color: #9F87BF; }
+        /* line 219, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+        .topic-wrap .topics .topic-tile-container .topic-tile.cpurp a {
+          color: #786691; }
+      /* line 221, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile.cyellow {
+        background: #EFCE6A; }
+        /* line 223, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+        .topic-wrap .topics .topic-tile-container .topic-tile.cyellow a {
+          color: #BBA150; }
+      /* line 225, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile.base-green {
+        background: #5FCF80; }
+        /* line 227, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+        .topic-wrap .topics .topic-tile-container .topic-tile.base-green a {
+          color: #3D8653; }
+      /* line 229, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile.soft-orange {
+        background: #F58A70; }
+        /* line 231, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+        .topic-wrap .topics .topic-tile-container .topic-tile.soft-orange a {
+          color: #9A5646; }
+      /* line 233, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile.blue-tile {
+        background: #3498DB; }
+        /* line 235, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+        .topic-wrap .topics .topic-tile-container .topic-tile.blue-tile a {
+          color: #246B9A; }
+      /* line 237, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile.mustard-orange {
+        background: #F39C12; }
+        /* line 239, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+        .topic-wrap .topics .topic-tile-container .topic-tile.mustard-orange a {
+          color: #895809; }
+      /* line 241, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile.flat-gray {
+        background: #6C8592; }
+        /* line 243, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+        .topic-wrap .topics .topic-tile-container .topic-tile.flat-gray a {
+          color: #4B5E67; }
+      /* line 245, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile.soft-blue {
+        background: #5CBBE0; }
+        /* line 247, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+        .topic-wrap .topics .topic-tile-container .topic-tile.soft-blue a {
+          color: #377086; }
+      /* line 249, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile.mint-green {
+        background: #5FC6B8; }
+        /* line 251, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+        .topic-wrap .topics .topic-tile-container .topic-tile.mint-green a {
+          color: #35726A; }
+      /* line 253, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile.purple {
+        background: #CA8FE2; }
+        /* line 255, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+        .topic-wrap .topics .topic-tile-container .topic-tile.purple a {
+          color: #825A92; }
+      /* line 257, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile.darker-pink {
+        background-color: #D86881; }
+        /* line 259, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+        .topic-wrap .topics .topic-tile-container .topic-tile.darker-pink a {
+          color: #773846; }
+      /* line 261, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile.salmon {
+        background: #F97669; }
+        /* line 263, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+        .topic-wrap .topics .topic-tile-container .topic-tile.salmon a {
+          color: #90423A; }
+      /* line 265, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile i {
+        display: block;
+        position: relative;
+        top: 25px;
+        font-size: 45px; }
+      /* line 270, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile .tile-footer {
+        width: 100%;
+        background: #fff;
+        height: 30px;
+        line-height: 30px;
+        position: absolute;
+        bottom: 0;
+        border-radius: 0 0 5px 5px; }
+        /* line 278, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+        .topic-wrap .topics .topic-tile-container .topic-tile .tile-footer .topic-title {
+          margin: 0;
+          font-weight: 400;
+          font-size: 16px;
+          color: #525252; }
+  /* line 283, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
   .topic-wrap .featured-classes {
     border-bottom: 1px solid #ccc; }
-  /* line 153, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+  /* line 285, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
   .topic-wrap .featured-courses {
     border-bottom: 1px solid #ccc; }
-  /* line 155, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+  /* line 287, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
   .topic-wrap .course-tile-holder, .topic-wrap .class-tile-holder {
     margin: 40px auto; }
-  /* line 158, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+  /* line 290, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
   .topic-wrap .featured-classes .class-tile, .topic-wrap .featured-courses .class-tile {
     display: inline-block;
     width: 23%;
     margin-right: 1.77%; }
-    /* line 162, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+    /* line 294, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
     .topic-wrap .featured-classes .class-tile a, .topic-wrap .featured-courses .class-tile a {
       text-decoration: none; }
-      /* line 164, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      /* line 296, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
       .topic-wrap .featured-classes .class-tile a .tile-header, .topic-wrap .featured-courses .class-tile a .tile-header {
         background: #5FC6B8;
         border-radius: 5px 5px 0 0;
         color: #fff;
         padding: 5px 0 5px 15px; }
-        /* line 169, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+        /* line 301, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
         .topic-wrap .featured-classes .class-tile a .tile-header h3, .topic-wrap .featured-courses .class-tile a .tile-header h3 {
           margin: 0;
           font-size: 15px;
           font-weight: 400; }
-      /* line 173, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      /* line 305, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
       .topic-wrap .featured-classes .class-tile a .tile-body, .topic-wrap .featured-courses .class-tile a .tile-body {
         background: #fff;
         padding: 20px;
         color: #7F8393; }
-        /* line 177, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+        /* line 309, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
         .topic-wrap .featured-classes .class-tile a .tile-body .category, .topic-wrap .featured-courses .class-tile a .tile-body .category {
           margin-bottom: 0;
           font-size: 14px; }
-          /* line 181, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+          /* line 313, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
           .topic-wrap .featured-classes .class-tile a .tile-body .category.foundations::before, .topic-wrap .featured-courses .class-tile a .tile-body .category.foundations::before {
             content: '\e920';
             font-family: 'icomoon';
             margin-right: 10px; }
-        /* line 185, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+        /* line 317, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
         .topic-wrap .featured-classes .class-tile a .tile-body .topic-length, .topic-wrap .featured-courses .class-tile a .tile-body .topic-length {
           font-size: 14px; }
-          /* line 187, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+          /* line 319, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
           .topic-wrap .featured-classes .class-tile a .tile-body .topic-length::before, .topic-wrap .featured-courses .class-tile a .tile-body .topic-length::before {
             content: '\e682';
             font-family: 'icomoon';
             margin-right: 10px; }
-      /* line 191, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      /* line 323, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
       .topic-wrap .featured-classes .class-tile a .tile-footer, .topic-wrap .featured-courses .class-tile a .tile-footer {
         background: #fff;
         border-top: 1px solid #ccc;
         text-align: center;
         padding: 8px 0; }
-        /* line 196, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+        /* line 328, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
         .topic-wrap .featured-classes .class-tile a .tile-footer h4, .topic-wrap .featured-courses .class-tile a .tile-footer h4 {
           color: #2C3E50;
           font-size: 13px;
           margin: 0; }
 
-@media screen and (max-width: 1170px) {
-  /* line 204, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+@media screen and (max-width: 1167px) {
+  /* line 335, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+  .hero-center h3.title {
+    font-size: 28px; }
+  /* line 337, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+  .hero-center p {
+    font-size: 14px; }
+  /* line 342, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
   .topic-wrap .topics .topic-tile-container .topic-tile {
-    width: calc(25% - 25px); } }
-
-@media screen and (max-width: 990px) {
-  /* line 210, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
-  .topic-wrap .topics .topic-tile-container .topic-tile {
-    width: calc(33.333% - 25px); } }
+    width: 23.72%; }
+    /* line 344, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+    .topic-wrap .topics .topic-tile-container .topic-tile:nth-child(6) {
+      margin: 1% 0 1% 1.6%; }
+    /* line 346, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+    .topic-wrap .topics .topic-tile-container .topic-tile:nth-child(5) {
+      margin: 1% 0 1% 0; }
+    /* line 348, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+    .topic-wrap .topics .topic-tile-container .topic-tile:nth-child(9) {
+      margin: 1% 0 1% 0; } }
 
 @media screen and (max-width: 767px) {
-  /* line 216, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+  /* line 353, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+  .content-wrap .content .hero-top {
+    height: 500px; }
+  /* line 357, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+  .content-wrap .content .hero-center h3.title {
+    margin-top: 0; }
+    /* line 359, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+    .content-wrap .content .hero-center h3.title::before {
+      font-size: 60px;
+      display: block; }
+  /* line 365, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
   .topic-wrap .topics .topic-tile-container .topic-tile {
-    width: calc(50% - 25px); } }
+    width: 32.26%; }
+    /* line 367, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+    .topic-wrap .topics .topic-tile-container .topic-tile:nth-child(4) {
+      margin: 1% 0 1% 0; }
+    /* line 369, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+    .topic-wrap .topics .topic-tile-container .topic-tile:nth-child(5) {
+      margin: 1% 0 1% 1.6%; }
+    /* line 371, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+    .topic-wrap .topics .topic-tile-container .topic-tile:nth-child(6) {
+      margin: 1% 0 1% 1.6%; }
+    /* line 373, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+    .topic-wrap .topics .topic-tile-container .topic-tile:nth-child(7) {
+      margin: 1% 0 1% 0; }
+    /* line 375, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+    .topic-wrap .topics .topic-tile-container .topic-tile:nth-child(8) {
+      margin: 1% 0 1% 1.6%; }
+    /* line 377, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+    .topic-wrap .topics .topic-tile-container .topic-tile:nth-child(9) {
+      margin: 1% 0 1% 1.6%; } }
+
+@media screen and (max-width: 550px) {
+  /* line 382, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+  .topic-wrap .topics .topic-tile-container {
+    margin-bottom: 25px; }
+    /* line 384, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+    .topic-wrap .topics .topic-tile-container .topic-tile {
+      width: 100%;
+      margin: 0 0 5% 0; }
+      /* line 387, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile:nth-child(3) {
+        margin: 0 0 5% 0; }
+      /* line 389, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile:nth-child(4) {
+        margin: 0 0 5% 0; }
+      /* line 391, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile:nth-child(5) {
+        margin: 0 0 5% 0; }
+      /* line 393, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile:nth-child(6) {
+        margin: 0 0 5% 0; }
+      /* line 395, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile:nth-child(7) {
+        margin: 0 0 5% 0; }
+      /* line 397, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile:nth-child(8) {
+        margin: 0 0 5% 0; }
+      /* line 399, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile:nth-child(9) {
+        margin: 0 0 5% 0; }
+      /* line 401, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/library/assets/styles/library.sass */
+      .topic-wrap .topics .topic-tile-container .topic-tile:last-child {
+        margin-bottom: 100px; } }
 
 /*# sourceMappingURL=library.css.map */

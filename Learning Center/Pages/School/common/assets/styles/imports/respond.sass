@@ -1,0 +1,79 @@
+//Media Queries
+@media screen and (max-width: 1147px)
+  .content-wrap
+    .content
+      .hero-top
+        height: 400px
+
+@media screen and (max-width: 991px)
+  .acc-container
+    li
+      a
+        padding-bottom: 0
+    .accordion
+      overflow: hidden
+  #video-container
+    margin-bottom: 0
+    video
+      border: 0
+  .content-wrap
+    .content
+      background: $column_gray
+      .curriculum
+        width: 100%
+        height: auto
+        .curriculum-center
+          width: 100%
+          position: relative
+        .about
+          padding-top: 25px
+          position: relative
+          width: 100%
+          padding-bottom: 100px
+          h3
+            margin-top: 0
+@media screen and (max-width: 767px)
+  #video-container
+    .control
+      .muted
+        font-size: 22px
+        top: 10px
+      .fullscreen
+        font-size: 25px
+        top: 10px
+      .current
+        font-size: 12px
+        top: 2px
+      .btnPlay
+        font-size: 30px
+        top: 7px
+      .progressBar
+        top: 6px
+  .welcome-quiz
+    opacity: 1 !important
+    .modal-body
+      top: 0 !important
+      -webkit-transform: translateX(-50%)!important
+      -moz-transform: translateX(-50%)!important
+      -o-transform: translateX(-50%)!important
+      transform: translateX(-50%)!important
+      width: 100%
+@media screen and (max-width: 640px)
+  #video-container
+    .control
+      .progressTime
+        width: 65%
+      .progressBar
+        top: 6px
+        width: 85%
+@media screen and (max-width: 544px)
+  #video-container
+    margin-bottom: 0
+
+
+
+@media screen and (max-width: 399px)
+  #video-container
+    .control
+      .progressBar
+        width: 65%

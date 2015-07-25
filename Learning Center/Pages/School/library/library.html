@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="initial-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="../common/assets/fonts/fonts.css"/>
-    <link rel="stylesheet" type="text/css" href="../common/assets/styles/scaffold.css"/>
+    <link rel="stylesheet" type="text/css" href="../common/assets/styles/third_party/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="../common/assets/styles/base.css"/>
     <link rel="stylesheet" type="text/css" href="assets/styles/library.css"/>
   </head>
   <body>
    <div class="content-wrap">
-     <nav class="side-bar">
-       <ul>
+     <input id="toggle" type="checkbox" />
+     <nav class="side-bar main-nav-container" role="navigation">
+       <ul class="main-nav">
          <li><a href="#"><i class="icon icon-gauge"></i></a></li>
-         <li class="active"><a href="#"><i class="icon icon-school"></i></a></li>
+         <li><a href="#"><i class="icon icon-school"></i></a></li>
          <li><a href="#"><i class="icon icon-explore"></i></a></li>
-         <li><a href="#"><i class="icon icon-extension"></i></a></li>
+         <li class="active"><a href="#"><i class="icon icon-extension"></i></a></li>
        </ul>
      </nav>
        <div class="content">
+         <div class="content-inner">
          <section class="hero-top library-hero">
+           <label for="toggle">
+             <div class="menu-icon-container">
+               <div class="menu-icon">
+                 <div class="menu-global menu-top"></div>
+                 <div class="menu-global menu-middle"></div>
+                 <div class="menu-global menu-bottom"></div>
+               </div>
+             </div>
+           </label>
            <div class="hero-center">
             <h3 class="title">Welcome To Learning Center</h3>
             <p>
@@ -32,7 +45,7 @@
            <input type="search" name="filter" placeholder="Search Classes, Courses, and Teachers..." id="search" value="" />
          </section>
          <div class="topic-wrap">
-           <section class="topics" data-filter="topics">
+           <section class="topics container-fluid" data-filter="topics">
              <div class="section-title">
                <div class="topic-text">
                  <h3>Topics</h3>
@@ -40,7 +53,123 @@
                </div>
              </div>
              <div class="topic-tile-container">
-               <div class="topic-tile base-green" data-filter="business,finance,marketing,Kody Bateman">
+              <a href="/learn/class/">
+                <div class="tile red" data-filter="business,finance,marketing,kody bateman">
+                  <div class="tile-inner">
+                    <h1 class="topic">Business</h1>
+                    <h2 class="course-name">
+                      Shut down your office.
+                      You now Work in Slack.
+                    </h2>
+                    <p class="course-info">
+                      Slack, a messaging tool designed for
+                      team collaboration, is working
+                      digital world's latest trend.
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <div class="tile center-blue" data-filter="finance,business,kody bateman">
+                <div class="tile-inner">
+                  <h1 class="topic">Finance (coming soon)</h1>
+                  <h2 class="course-name">
+                    Shut down your office.
+                    You now Work in Slack.
+                  </h2>
+                  <p class="course-info">
+                    Slack, a messaging tool designed for
+                    team collaboration, is working
+                    digital world's latest trend.
+                  </p>
+                </div>
+              </div>
+              <div class="tile corange" data-filter="programming">
+                <div class="tile-inner">
+                  <h1 class="topic">Programming (coming soon)</h1>
+                  <h2 class="course-name">
+                    Shut down your office.
+                    You now Work in Slack.
+                  </h2>
+                  <p class="course-info">
+                    Slack, a messaging tool designed for
+                    team collaboration, is working
+                    digital world's latest trend.
+                  </p>
+                </div>
+              </div>
+              <div class="tile cpurp" data-filter="photography">
+                <div class="tile-inner">
+                  <h1 class="topic">Photography</h1>
+                  <h2 class="course-name">
+                    Shut down your office.
+                    You now Work in Slack.
+                  </h2>
+                  <p class="course-info">
+                    Slack, a messaging tool designed for
+                    team collaboration, is working
+                    digital world's latest trend.
+                  </p>
+                </div>
+              </div>
+              <div class="tile cpurp opacity" data-filter="business,finance,marketing,kody bateman">
+                <div class="tile-inner">
+                  <h1 class="topic">Business</h1>
+                  <h2 class="course-name">
+                    Shut down your office.
+                    You now Work in Slack.
+                  </h2>
+                  <p class="course-info">
+                    Slack, a messaging tool designed for
+                    team collaboration, is working
+                    digital world's latest trend.
+                  </p>
+                </div>
+              </div>
+              <div class="tile cyellow opacity" data-filter="finance,business,kody bateman">
+                <div class="tile-inner">
+                  <h1 class="topic">Finance</h1>
+                  <h2 class="course-name">
+                    Shut down your office.
+                    You now Work in Slack.
+                  </h2>
+                  <p class="course-info">
+                    Slack, a messaging tool designed for
+                    team collaboration, is working
+                    digital world's latest trend.
+                  </p>
+                </div>
+              </div>
+              <div class="tile red opacity" data-filter="programming">
+                <div class="tile-inner">
+                  <h1 class="topic">Programming</h1>
+                  <h2 class="course-name">
+                    Shut down your office.
+                    You now Work in Slack.
+                  </h2>
+                  <p class="course-info">
+                    Slack, a messaging tool designed for
+                    team collaboration, is working
+                    digital world's latest trend.
+                  </p>
+                </div>
+              </div>
+              <div class="tile center-blue opacity" data-filter="photography">
+                <div class="tile-inner">
+                  <h1 class="topic">Photography</h1>
+                  <h2 class="course-name">
+                    Shut down your office.
+                    You now Work in Slack.
+                  </h2>
+                  <p class="course-info">
+                    Slack, a messaging tool designed for
+                    team collaboration, is working
+                    digital world's latest trend.
+                  </p>
+                </div>
+              </div>
+
+
+               <div class="topic-tile red" data-filter="business,finance,marketing,kody bateman">
                  <a href="">
                    <i class="icon-join-fill"></i>
                    <div class="tile-footer">
@@ -48,7 +177,7 @@
                    </div>
                  </a>
                </div>
-               <div class="topic-tile soft-orange" data-filter="finance,business,Kody Bateman">
+               <div class="topic-tile center-blue" data-filter="finance,business,kody bateman">
                  <a href="">
                    <i class="icon-attach-money"></i>
                    <div class="tile-footer">
@@ -56,7 +185,7 @@
                    </div>
                  </a>
                </div>
-               <div class="topic-tile blue-tile" data-filter="programming">
+               <div class="topic-tile corange" data-filter="programming">
                  <a href="">
                    <i class="icon-laptop"></i>
                    <div class="tile-footer">
@@ -64,7 +193,7 @@
                    </div>
                  </a>
                </div>
-               <div class="topic-tile mustard-orange" data-filter="photography">
+               <div class="topic-tile cpurp" data-filter="photography">
                  <a href="">
                    <i class="icon-camera"></i>
                    <div class="tile-footer">
@@ -72,7 +201,7 @@
                    </div>
                  </a>
                </div>
-               <div class="topic-tile flat-gray" data-filter="fitness,sports">
+               <div class="topic-tile cyellow" data-filter="fitness,sports">
                  <a href="">
                    <i class="icon-timer"></i>
                    <div class="tile-footer">
@@ -80,7 +209,7 @@
                    </div>
                  </a>
                </div>
-               <div class="topic-tile soft-blue" data-filter="video,videography">
+               <div class="topic-tile cpurp opacity-tile" data-filter="video,videography">
                  <a href="">
                    <i class="icon-video"></i>
                    <div class="tile-footer">
@@ -88,7 +217,7 @@
                    </div>
                  </a>
                </div>
-               <div class="topic-tile mint-green" data-filter="marketing,business">
+               <div class="topic-tile cyellow opacity-tile" data-filter="marketing,business">
                  <a href="">
                    <i class="icon-account-child"></i>
                    <div class="tile-footer">
@@ -96,7 +225,7 @@
                    </div>
                  </a>
                </div>
-               <div class="topic-tile purple" data-filter="sports,fitness">
+               <div class="topic-tile red opacity-tile" data-filter="sports,fitness">
                  <a href="">
                    <i class="icon-accessibility"></i>
                    <div class="tile-footer">
@@ -104,7 +233,7 @@
                    </div>
                  </a>
                </div>
-               <div class="topic-tile darker-pink" data-filter="communications">
+               <div class="topic-tile corange opacity-tile" data-filter="communications">
                  <a href="">
                    <i class="icon-chat-fill"></i>
                    <div class="tile-footer">
@@ -112,7 +241,7 @@
                    </div>
                  </a>
                </div>
-               <div class="topic-tile salmon" data-filter="business,Kody bateman">
+               <div class="topic-tile center-blue opacity-tile" data-filter="business,kody bateman">
                  <a href="">
                    <i class="icon-school"></i>
                    <div class="tile-footer">
@@ -122,6 +251,7 @@
                </div>
              </div>
            </section>
+           <div class="hide">
            <section class="featured-classes" data-filter="classes">
               <div class="section-title">
                <div class="topic-text">
@@ -256,11 +386,13 @@
                </div>
              </div>
            </section>
+         </div>
         </div>
-
+      </div>
        </div>
    </div>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script type="text/javascript" src="../common/assets/scripts/navigation.js"></script>
    <script type="text/javascript" src="assets/scripts/scripts.js"></script>
   </body>
 </html>
