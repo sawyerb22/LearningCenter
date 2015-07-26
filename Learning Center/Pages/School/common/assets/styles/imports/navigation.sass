@@ -15,7 +15,6 @@ body
   animation: bugfix infinite 1s
   // fixed android bug
   position: relative
-
 @-webkit-keyframes bugfix
   from
     padding: 0
@@ -46,7 +45,6 @@ body
     z-index: 101
     background: $main_gray
     ul
-      margin: 5px
       li
         color: $main_accent
         text-align: center
@@ -103,12 +101,16 @@ body
           i
             font-weight: bold
             font-size: 22px
+      &.main-nav
+        margin: 5px
       &.bottom-links
         position: absolute
         bottom: 25px
         left: 50%
         transform: translateX(-50%)
         -webkit-transform: translate(-50%)
+        -moz-transform: translate(-50)
+        margin: 0
         li
           i
             font-weight: bold
@@ -153,13 +155,16 @@ body
 .menu-top-click
   top: 19px
   transform: rotate(48deg)
-
+  -webkit-transform: rotate(48deg)
+  -moz-transform: rotate(48deg)
 .menu-middle-click
   opacity: 0
 
 .menu-bottom-click
   top: 19px
   transform: rotate(-48deg)
+  -webkit-transform: rotate(-48deg)
+  -moz-transform: rotate(-48deg)
 
 /* gets rid of the browser-created checkbox
 
@@ -231,6 +236,7 @@ body
       position: fixed
       transform: translateX(-315px)
       -webkit-transform: translateX(-315px)
+      -moz-transform: translateX(-315px)
       +bp(tablet)
         margin-left: 0%
         position: static
