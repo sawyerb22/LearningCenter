@@ -7,6 +7,7 @@ $medium-gray: #595960
 $dark-gray: #2f313c
 $dark-blue: #2e313c
 $nav: #3e474f
+$nav2: #455463
 
 body
   animation: bugfix infinite 1s
@@ -19,15 +20,7 @@ body
   to
     padding: 0
 
-+bp(phone)
-  .content
-    height: auto
-    margin: 0 auto
-    overflow: hidden
-    position: relative
-    width: 100%
-    min-width: 300px
-
+.content
   &::before
   &::after
     +clearfix
@@ -51,23 +44,78 @@ body
     left: 0
     width: 50px
     height: 100%
+    z-index: 101
     background: $main_gray
     ul
       li
+        color: $main_accent
         text-align: center
-        margin-bottom: 20px
+        margin-bottom: 28px
+        position: relative
+        &:hover
+          color: #fafafa
+          cursor: pointer
+          span
+            opacity: 1
+            left: 60px
+            visibility: visible
         &:first-child
           margin-top: 20px
         &:last-child
           margin-bottom: 0
+        //Nav Tooltips
+        span
+          visibility: hidden
+          top: 0
+          left: 65px
+          background: $nav
+          color: #fff
+          border-radius: 5px
+          padding: 0 14px
+          line-height: 38px
+          white-space: nowrap
+          z-index: 155
+          opacity: 0
+          position: absolute
+          &::after
+            position: absolute
+            content: ""
+            background: darken($nav,4%)
+            width: 10px
+            height: 10px
+            border-radius: 0 0 0 3px
+            -ms-transform: rotate(45deg)
+            transform: rotate(45deg)
+            -moz-transform: rotate(45deg)
+            -webkit-transform: rotate(45deg)
+            top: 14px
+            left: -5px
         &.active
+          width: 80%
+          margin: 0 auto
+          padding: 8px
+          border-radius: 5px
+          background-color: darken( $nav, 4% )
           i
-            color: $neon_teal
+            font-weight: normal
+            color: #66DFAE
         a
+          color: inherit
           text-decoration: none
           i
+            font-weight: bold
             font-size: 22px
-            color: $main_accent
+      &.bottom-links
+        position: absolute
+        bottom: 25px
+        left: 50%
+        transform: translateX(-50%)
+        -webkit-transform: translate(-50%)
+        li
+          a
+          i
+            font-weight: bold
+            font-size: 24px
 
 /* menu icon
 .menu-icon-container
@@ -126,65 +174,49 @@ body
 @media (max-width: 766px)
   .content-wrap
     .side-bar
-      background: $nav
+      background: $nav2
       height: 100%
       overflow: auto
-      right: -75%
+      right: -300px
       left: inherit
       top: 0
       padding: 0
       position: fixed
-      width: 75%
+      width: 315px
       transition: all 0.55s ease-in-out 0s
   /* styles the nav
-  .main-nav
+  .main-nav,
+  .bottom-links
+    margin: 5px
+    li
+      width: 100%
+      &.active
+        a
+          background-color: darken($nav2, 9%)
+          border-radius: 5px
+          color: #fafafa
+      a
+        display: inline-block
+        padding: 0 10px
+        display: block
+        position: relative
+        height: 100%
+        line-height: 50px
+        color: #A4B1BC
+        width: 100%
+        i
+          display: none
+
+      span
+        display: inline-block
+  .bottom-links
+    width: 100%
     margin: 0
-    padding: 0
-    +bp(tablet)
-      border: 0
-      margin-left: -380px
-      position: absolute
-      top: 70px
-      right: auto
-      bottom: auto
-      left: 50%
-      z-index: 100
-  .main-nav li
-    display: block
-    font-size: 1.2rem
-    height: auto
-    letter-spacing: 0.1rem
-    list-style: none
-    padding: 0
-    text-align: center
-    text-transform: uppercase
-    +bp(tablet)
-      border: none
-      color: $nav
-      display: inline-block
-      padding: 0 10px
-  .main-nav li a
-    background: $nav
-    color: #353535
-    display: block
-    font-size: 1.1rem
-    font-weight: 500
-    padding: 40px 0
-    text-decoration: none
-    +bp(tablet)
-      background: none
-      color: $orange
-      display: inline-block
-      font-size: 0.8rem
-      font-weight: 100
-      padding: 0
-      transition: all 0.55s ease-in-out 0s
-    &:hover
-      background: darken($nav, 8%)
-      color: lighten($nav, 10%)
-      +bp(tablet)
-        background: none
-        color: white
+    border-top: 1px solid darken($nav2, 5%)
+    li
+      margin: 5px
+      width: 305px
+
   /* when the menu is clicked / checkbox checked
   input
     &:checked ~ .side-bar
@@ -200,7 +232,8 @@ body
         transition: all 0.55s ease-in-out 0s
     &:checked ~ .content .content-inner
       position: fixed
-      transform: translateX(-75%)
+      transform: translateX(-315px)
+      -webkit-transform: translateX(-315px)
       +bp(tablet)
         margin-left: 0%
         position: static
@@ -213,3 +246,4 @@ body
       width: 100%
       &::after
         +clearfix
+//Tool Tips
