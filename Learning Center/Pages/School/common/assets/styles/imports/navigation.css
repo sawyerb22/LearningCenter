@@ -1,86 +1,243 @@
-/*
-Error: Undefined mixin 'clearfix'.
-        on line 33 of navigation.sass, in `clearfix'
-        from line 33 of navigation.sass
+/* variables */
+/* mixins */
+body {
+  animation: bugfix infinite 1s;
+  position: relative; }
 
-28:   width: 100%
-29:   min-width: 300px
-30: 
-31:   &::before
-32:   &::after
-33:     +clearfix
-34: .content-inner
-35:   float: left
-36:   width: 100%
-37:   margin-left: 0
-38:   transition: all 0.55s ease-in-out 0s
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0; }
+  to {
+    padding: 0; } }
+.content::after {
+  clear: both;
+  content: "";
+  display: table; }
 
-Backtrace:
-navigation.sass:33:in `clearfix'
-navigation.sass:33
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/stack.rb:98:in `block in with_mixin'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/stack.rb:98:in `with_mixin'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:336:in `visit_mixin'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:489:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:469:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'clearfix'.\A         on line 33 of navigation.sass, in `clearfix'\A         from line 33 of navigation.sass\A \A 28:   width: 100%\A 29:   min-width: 300px\A 30: \A 31:   &::before\A 32:   &::after\A 33:     +clearfix\A 34: .content-inner\A 35:   float: left\A 36:   width: 100%\A 37:   margin-left: 0\A 38:   transition: all 0.55s ease-in-out 0s"; }
+.content-inner {
+  float: left;
+  width: 100%;
+  margin-left: 0;
+  transition: all 0.55s ease-in-out 0s; }
+
+/* Desktop nav */
+@media (min-width: 760px) {
+  .content {
+    width: calc(100% - 50px);
+    height: 100%;
+    position: relative;
+    left: 50px; }
+
+  .side-bar {
+    position: fixed;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    z-index: 101;
+    background: #404951; }
+    .side-bar ul {
+      margin: 5px; }
+      .side-bar ul li {
+        color: #7F8393;
+        text-align: center;
+        margin-bottom: 28px;
+        position: relative; }
+        .side-bar ul li:hover {
+          color: #fafafa;
+          cursor: pointer; }
+          .side-bar ul li:hover span {
+            opacity: 1;
+            left: 60px;
+            visibility: visible; }
+        .side-bar ul li:first-child {
+          margin-top: 20px; }
+        .side-bar ul li:last-child {
+          margin-bottom: 0; }
+        .side-bar ul li span {
+          visibility: hidden;
+          top: 0;
+          left: 65px;
+          background: #3e474f;
+          color: #fff;
+          border-radius: 5px;
+          padding: 0 14px;
+          line-height: 38px;
+          white-space: nowrap;
+          z-index: 155;
+          opacity: 0;
+          position: absolute; }
+          .side-bar ul li span::after {
+            position: absolute;
+            content: "";
+            background: #353d44;
+            width: 10px;
+            height: 10px;
+            border-radius: 0 0 0 3px;
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            top: 14px;
+            left: -5px; }
+        .side-bar ul li.active {
+          padding: 8px;
+          border-radius: 5px;
+          background-color: #353d44; }
+          .side-bar ul li.active i {
+            font-weight: normal;
+            color: #66DFAE; }
+        .side-bar ul li a {
+          color: inherit;
+          text-decoration: none; }
+          .side-bar ul li a i {
+            font-weight: bold;
+            font-size: 22px; }
+      .side-bar ul.bottom-links {
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translate(-50%); }
+        .side-bar ul.bottom-links li i {
+          font-weight: bold;
+          font-size: 24px; } }
+/* menu icon */
+.menu-icon-container {
+  display: block;
+  float: right;
+  height: 65px;
+  position: relative;
+  z-index: 999999; }
+  @media (min-width: 760px) {
+    .menu-icon-container {
+      display: none; } }
+
+.menu-icon {
+  cursor: pointer;
+  height: 40px;
+  position: relative;
+  top: 22px;
+  right: 20px;
+  transition: all 0.15s linear;
+  width: 40px; }
+
+.menu-global {
+  backface-visibility: hidden;
+  border-top: 2px solid white;
+  left: 0;
+  position: absolute;
+  transition: all 0.15s linear;
+  width: 96%; }
+
+.menu-top {
+  top: 0px; }
+
+.menu-middle {
+  top: 12px; }
+
+.menu-bottom {
+  top: 24px; }
+
+.menu-top-click {
+  top: 19px;
+  transform: rotate(48deg); }
+
+.menu-middle-click {
+  opacity: 0; }
+
+.menu-bottom-click {
+  top: 19px;
+  transform: rotate(-48deg); }
+
+/* gets rid of the browser-created checkbox */
+#toggle {
+  position: absolute;
+  left: -4000px; }
+
+/* styles the nav position */
+@media (max-width: 766px) {
+  .content-wrap .side-bar {
+    background: #455463;
+    height: 100%;
+    overflow: auto;
+    right: -300px;
+    left: inherit;
+    top: 0;
+    padding: 0;
+    position: fixed;
+    width: 315px;
+    transition: all 0.55s ease-in-out 0s; }
+
+  /* styles the nav */
+  .main-nav,
+  .bottom-links {
+    margin: 5px; }
+    .main-nav li,
+    .bottom-links li {
+      width: 100%; }
+      .main-nav li.active a,
+      .bottom-links li.active a {
+        background-color: #323d48;
+        border-radius: 5px;
+        color: #fafafa; }
+      .main-nav li a,
+      .bottom-links li a {
+        display: inline-block;
+        padding: 0 10px;
+        display: block;
+        position: relative;
+        height: 100%;
+        line-height: 50px;
+        color: #A4B1BC;
+        width: 100%; }
+        .main-nav li a i,
+        .bottom-links li a i {
+          display: none; }
+      .main-nav li span,
+      .bottom-links li span {
+        display: inline-block; }
+
+  .bottom-links {
+    width: 100%;
+    margin: 0;
+    border-top: 1px solid #3b4754; }
+    .bottom-links li {
+      margin: 5px;
+      width: 305px; }
+
+  /* when the menu is clicked / checkbox checked */
+  input:checked ~ .side-bar {
+    right: 0;
+    z-index: 101; } }
+  @media (max-width: 766px) and (min-width: 760px) {
+    input:checked ~ .side-bar {
+      background: transparent;
+      height: auto;
+      float: right;
+      padding: 0;
+      position: static;
+      width: 100%;
+      transition: all 0.55s ease-in-out 0s; } }
+@media (max-width: 766px) {
+  input:checked ~ .content .content-inner {
+    position: fixed;
+    transform: translateX(-315px);
+    -webkit-transform: translateX(-315px); } }
+  @media (max-width: 766px) and (min-width: 760px) {
+    input:checked ~ .content .content-inner {
+      margin-left: 0%;
+      position: static;
+      transition: all 0.55s ease-in-out 0s; } }
+
+@media (max-width: 766px) {
+  .content-wrap .content {
+    height: 100%;
+    padding: 0;
+    left: inherit;
+    width: 100%; }
+    .content-wrap .content::after {
+      clear: both;
+      content: "";
+      display: table; } }
+
+/*# sourceMappingURL=navigation.css.map */
