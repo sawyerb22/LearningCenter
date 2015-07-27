@@ -20,7 +20,7 @@ var curriculumItems;
 
 $.ajax({
     type: 'GET',
-    url: 'data/curriculum.json',
+    url: 'data/using_systems.json',
     dataType: 'json',
     success: function(data){
       curriculumItems = data;

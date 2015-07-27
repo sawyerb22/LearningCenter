@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html ng-app="quizApp">
+  <head>
+    <meta name="viewport" content="initial-scale=1">
+    <meta name="viewport" content="height=device-height">
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../../common/assets/fonts/fonts.css"/>
+    <link rel="stylesheet" type="text/css" href="../../common/assets/styles/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../assets/styles/class.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/quiz/quiz.css"/>
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script src="assets/scripts/quiz/quiz.js"></script>
+    <script src="assets/scripts/quiz/app.js"></script>
+  </head>
+  <body>
+   <div class="content-wrap">
+     <input id="toggle" type="checkbox" />
+     <nav class="side-bar main-nav-container" role="navigation">
+       <ul class="main-nav">
+         <li><a href="http://www.thecenterstudios.com/learn/index"><i class="icon icon-lightbulb"></i><span>Home</span></a></li>
+         <li><a href="http://www.thecenterstudios.com/learn/library"><i class="icon icon-book-open"></i><span>Library</span></a></li>
+         <li><a href="#"><i class="icon icon-compass3"></i><span>Paths</span></a></li>
+         <li class="active"><a href="http://www.thecenterstudios.com/learn/class"><i class="icon icon-tools2"></i><span>Classes</span></a></li>
+       </ul>
+       <ul class="bottom-links">
+         <li><a href="#"><i class="icon icon-gears"></i><span>Account Settings</span></a></li>
+       </ul>
+     </nav>
+       <div class="content">
+         <div class="content-inner">
+           <label for="toggle">
+             <div class="menu-icon-container">
+               <div class="menu-icon">
+                 <div class="menu-global menu-top"></div>
+                 <div class="menu-global menu-middle"></div>
+                 <div class="menu-global menu-bottom"></div>
+               </div>
+             </div>
+           </label>
+         <section class="curriculum">
+           <div class="curriculum-center container">
+             <quiz/>
+           </div>
+           <div class="about">
+              <div class="quiz-info">
+                <h4>Stage 1</h4>
+                <h2>Color Therory</h2>
+                <div class="navigator">
+                  <div class="back-button"><a href="/class"><i class="icon-arrow-back"></i></a></div>
+                  <div class="skip-button"><i class="icon-arrow-forward"></i></div>
+                </div>
+              </div>
+              <div class="teacher-info" style="display: none;">
+                <h3>Class Instructor</h3>
+                <h4>Jonny Ive</h4>
+                <p class="about-teach">
+                  Jonny spends most of his
+                  time working at apple where
+                  he is busy designing things like
+                  the latest Iphone, or the majesty
+                  of the latest version of IOS user
+                  interface. Needless to say Jonny is a leader in
+                  the industry of design. We couldnt have asked for
+                  anyone better to teach this course.
+                </p>
+              </div>
+           </div>
+         </section>
+       </div>
+       </div>
+   </div>
+
+  </body>
+</html>

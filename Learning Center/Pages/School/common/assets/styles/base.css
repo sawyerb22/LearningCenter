@@ -5,7 +5,8 @@
 /* mixins */
 body {
   animation: bugfix infinite 1s;
-  position: relative; }
+  position: relative;
+  background-color: #455463; }
 
 @-webkit-keyframes bugfix {
   from {

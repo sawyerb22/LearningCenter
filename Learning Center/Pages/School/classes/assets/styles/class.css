@@ -1,14 +1,14 @@
-/* line 4, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+/* line 5, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
 .content-wrap .content .hero-top {
   padding-left: 35px;
   height: 300px; }
-  /* line 7, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+  /* line 8, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
   .content-wrap .content .hero-top .hero-center {
     width: 60%;
     display: inline-block;
     position: relative;
     top: 20px; }
-    /* line 12, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+    /* line 13, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
     .content-wrap .content .hero-top .hero-center h2 {
       margin-top: 0;
       color: #fff;
@@ -19,23 +19,24 @@
       font-size: 20px;
       font-weight: 300;
       margin-bottom: 50px; }
-    /* line 22, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+    /* line 23, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
     .content-wrap .content .hero-top .hero-center .title {
       color: #fff;
       font-weight: 400; }
-    /* line 25, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+    /* line 26, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
     .content-wrap .content .hero-top .hero-center p {
       color: #fff;
       font-weight: 300;
       font-size: 16px;
       line-height: 22px; }
-      /* line 30, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+      /* line 31, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
       .content-wrap .content .hero-top .hero-center p .hero-btn {
         margin-top: 0;
         padding: 5px;
         position: absolute;
         right: 0; }
-/* line 35, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+
+/* line 36, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
 .content-wrap .content .icon-badge {
   width: 150px;
   height: 150px;
@@ -47,59 +48,61 @@
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%); }
-  /* line 46, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+  /* line 47, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
   .content-wrap .content .icon-badge img {
     margin: 0 auto;
     margin-top: 40px;
     width: 50%;
     display: block; }
-/* line 52, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+
+/* line 53, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
 .content-wrap .content .hero-button {
   position: absolute;
   right: 50px;
   padding: 8px 40px;
   margin-top: 20px; }
-/* line 58, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+
+/* line 59, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
 .content-wrap .content .video-track .active {
   color: #5FCF80 !important;
   font-weight: bold; }
-  /* line 61, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+  /* line 62, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
   .content-wrap .content .video-track .active i {
     color: #5FCF80; }
-  /* line 63, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+  /* line 64, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
   .content-wrap .content .video-track .active span {
     color: #5FCF80; }
 
 @media screen and (max-width: 1147px) {
-  /* line 68, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+  /* line 69, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
   .content-wrap .content .hero-top {
     height: 400px; }
-    /* line 70, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+    /* line 71, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
     .content-wrap .content .hero-top .hero-center {
       width: 50%; }
-      /* line 72, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+      /* line 73, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
       .content-wrap .content .hero-top .hero-center p {
         font-size: 14px; }
-  /* line 74, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+  /* line 75, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
   .content-wrap .content .hero-button {
     margin-top: 40px; } }
 
 @media screen and (max-width: 991px) {
-  /* line 79, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+  /* line 80, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
   .content-wrap .content .icon-badge {
     right: 65px; }
-  /* line 82, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+  /* line 83, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
   .content-wrap .acc-container .accordion .acc-open .acc-drawer {
     position: relative;
     bottom: 4px; }
-  /* line 85, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+  /* line 86, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
   .content-wrap .acc-container .accordion .acc-open .acc-drawer li.video-track a {
     font-size: 12px; }
-  /* line 87, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+  /* line 88, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
   .content-wrap .acc-container .accordion .acc-open .acc-drawer li.video-track a i {
     margin-right: 15px;
     left: 5px; }
-  /* line 92, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+  /* line 93, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
   .content-wrap .acc-container li a .feature-content {
     display: inline-block;
     position: relative;
@@ -107,17 +110,17 @@
     width: calc(90% - 45px);
     float: left;
     padding-bottom: 25px; }
-    /* line 99, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+    /* line 100, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
     .content-wrap .acc-container li a .feature-content h3 {
       font-size: 12px; }
-    /* line 101, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+    /* line 102, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
     .content-wrap .acc-container li a .feature-content p {
       margin-top: 4px;
       font-size: 12px; }
-  /* line 104, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+  /* line 105, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
   .content-wrap .acc-container li a .badge-container {
     float: left; }
-  /* line 106, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+  /* line 107, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
   .content-wrap .acc-container li a .badge {
     display: inline-block;
     width: 65px;
@@ -129,35 +132,36 @@
     left: 15px; } }
 
 @media screen and (max-width: 625px) {
-  /* line 119, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+  /* line 120, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
   .content-wrap .content .icon-badge {
     right: 25px; }
-  /* line 122, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+  /* line 123, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
   .content-wrap .content .hero-top .hero-center {
     width: 60%; } }
 
 @media screen and (max-width: 530px) {
-  /* line 127, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+  /* line 128, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
   .content-wrap .content .hero-button {
     position: relative;
     display: block;
     margin: 15px auto;
     right: 0; }
-  /* line 132, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+  /* line 133, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
   .content-wrap .content .hero-top {
-    padding-left: 0; }
-    /* line 134, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+    padding-left: 0;
+    height: 480px; }
+    /* line 136, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
     .content-wrap .content .hero-top .hero-center {
       width: 90%;
       display: block;
       margin: 0 auto; }
-      /* line 138, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+      /* line 140, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
       .content-wrap .content .hero-top .hero-center p {
         font-size: 14px; }
-      /* line 140, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+      /* line 142, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
       .content-wrap .content .hero-top .hero-center .title {
         margin-top: 140px; }
-  /* line 142, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+  /* line 144, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
   .content-wrap .content .icon-badge {
     width: 100px;
     height: 100px;
@@ -168,7 +172,7 @@
     -moz-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%); }
-    /* line 152, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
+    /* line 154, /Users/sawyerbateman/Projects/The Center/Learning Center/Pages/School/classes/assets/styles/class.sass */
     .content-wrap .content .icon-badge img {
       margin-top: 28px; } }
 

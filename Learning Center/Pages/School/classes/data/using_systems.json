@@ -1,0 +1,33 @@
+[
+  {
+    "type": "video",
+    "duration": "2:42",
+    "src": "assets/videos/Using_system/using_the_system.mp4",
+    "title": "Using the system"
+  },
+  {
+    "type": "video",
+    "duration": "1:16",
+    "src": "assets/videos/Using_system/Groups.mp4",
+    "title": "Groups"
+  },
+    {
+    "type": "video",
+    "duration": "12:33",
+    "src": "assets/videos/Using_system/c41l.mp4",
+    "title": "Campaign C41l"
+  },
+  {
+    "type": "video",
+    "duration": "12:33",
+    "src": "assets/videos/Using_system/Campaigns_Csl1.mp4",
+    "title": "Campaign CSL1"
+  },
+
+  {
+    "type": "quiz",
+    "duration": "5 questions",
+    "href": "/quiz.html",
+    "title": "Campaign C41L"
+  }
+]

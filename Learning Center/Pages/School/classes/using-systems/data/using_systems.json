@@ -1,0 +1,28 @@
+[
+  {
+    "type": "video",
+    "duration": "2:21",
+    "src": "assets/videos/Using_system/using_the_system.mp4",
+    "title": "Using the system"
+  },
+  {
+    "type": "video",
+    "duration": "5:11",
+    "src": "assets/videos/Using_system/Groups.mp4",
+    "title": "Groups"
+  },
+    
+  {
+    "type": "video",
+    "duration": "4:42",
+    "src": "assets/videos/Using_system/Campaigns_Csl1.mp4",
+    "title": "Campaigns"
+  },
+
+  {
+    "type": "quiz",
+    "duration": "5 questions",
+    "href": "../quiz.html",
+    "title": "System Quiz"
+  }
+]
